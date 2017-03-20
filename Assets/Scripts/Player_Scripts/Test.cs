@@ -5,7 +5,7 @@ public class Test : MonoBehaviour {
 	//Scale sizes & speeds
 	public int startSize = 1;
 	public int minSize = 1;
-	public int maxSize = 10;
+	public int maxSize = 100;
 	public float speed = 4.0f;
 	public GameObject Cube;
 	//Timer
@@ -30,6 +30,8 @@ public class Test : MonoBehaviour {
 		currScale = startSize;
 		targetScale = baseScale * startSize;
 		movement = GetComponent<Movement> ();
+
+
 	}
 
 	void Update() {
@@ -46,7 +48,12 @@ public class Test : MonoBehaviour {
 			//movementToggle = !movementToggle;
 			//Cube.GetComponent<Movement> ().LaunchRage ();
 			next = Time.time + delay;
-			act = true;
+            movementToggle = !movementToggle;
+
+            BoxCollider boxCollider = (BoxCollider)GetComponent(typeof(BoxCollider));
+            boxCollider.size = new Vector3(100f, 100f, 100f);
+			
+            act = true;
 			Debug.Log("agro");
 			ChangeSize (true);
 		}
@@ -55,7 +62,11 @@ public class Test : MonoBehaviour {
 			act = false;
 			ChangeSize (false);
 			movementToggle = !movementToggle;
-			Debug.Log("Calm");
+          
+            BoxCollider boxCollider = (BoxCollider)GetComponent(typeof(BoxCollider));
+            boxCollider.size = new Vector3(1f, 1f, 1f);
+			
+            Debug.Log("Calm");
 		}
 	}
 
