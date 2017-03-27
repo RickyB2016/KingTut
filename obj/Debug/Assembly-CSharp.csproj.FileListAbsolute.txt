@@ -29,3 +29,35 @@ C:\Users\nbarden\Desktop\New Unity Project\Temp\bin\Debug\UnityEngine.VR.xml
 C:\Users\nbarden\Desktop\New Unity Project\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\nbarden\Desktop\New Unity Project\obj\Debug\Assembly-CSharp.dll
 C:\Users\nbarden\Desktop\New Unity Project\obj\Debug\Assembly-CSharp.pdb
+C:\Users\rbarkley4\Desktop\KingTut\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\rbarkley4\Desktop\KingTut\obj\Debug\Assembly-CSharp.dll
+C:\Users\rbarkley4\Desktop\KingTut\obj\Debug\Assembly-CSharp.pdb
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\BehaviorDesignerRuntime.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEditor.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEditor.iOS.Extensions.Common.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.VR.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.xml
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEditor.xml
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.VR.xml

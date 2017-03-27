@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class heartSystem : MonoBehaviour {
@@ -11,12 +12,12 @@ public class heartSystem : MonoBehaviour {
 	private int healthPerHeart = 2;
 
 	public Image[] healthImages;
-	public Sprite[] healthSprites;
+	//public Sprite[] healthSprites;
 
 	// Use this for initialization
 	void Start () 
 	{
-		curHealth = startHeart	* healthPerHeart;
+		curHealth = startHearts	* healthPerHeart;
 		maxHealth = maxHeartAmount * healthPerHeart;
 	}
 	
@@ -38,13 +39,13 @@ public class heartSystem : MonoBehaviour {
 
 	void UpdateHearts()
 	{
-		bool empty false;
+		bool empty = false;
 		int i = 0;
 		foreach(Image image in healthImages)
 		{
 			if(empty)
 			{
-				image.sprite = healthSprites[0];
+				//image.sprite = healthSprites[0];
 			}
 		}
 	}
