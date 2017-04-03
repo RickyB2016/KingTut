@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour {
 
+	public Canvas startMenu;
     public Canvas optionsMenu;
     public Canvas quitMenu;
     public Button startText;
@@ -15,7 +16,7 @@ public class MenuScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
-	
+		startMenu =GetComponent<Canvas>();
         quitMenu = quitMenu.GetComponent<Canvas>();
         optionsMenu = optionsMenu.GetComponent<Canvas>();
         startText = startText.GetComponent<Button>();
@@ -32,6 +33,7 @@ public class MenuScript : MonoBehaviour {
         exitText.enabled = false;
         optionsMenu.enabled = true;
 		optionsText.enabled = false;
+		startMenu.gameObject.SetActive(false);
     }
 
     public void ExitPress()
@@ -41,6 +43,8 @@ public class MenuScript : MonoBehaviour {
         startText.enabled = false;
         exitText.enabled = false;
         optionsMenu.enabled = false;
+		startMenu.gameObject.SetActive(false);
+
     }
 
     public void NoPress()
@@ -50,6 +54,8 @@ public class MenuScript : MonoBehaviour {
         exitText.enabled = true;
         optionsMenu.enabled = false;
 		optionsText.enabled = true;
+		startMenu.gameObject.SetActive(true);
+
     }
 
     public void StartLevel()
