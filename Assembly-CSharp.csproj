@@ -622,6 +622,7 @@
      <Compile Include="Assets\IgnoreTheseFiles\Standard_Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\IgnoreTheseFiles\Standard_Assets\Utility\WaypointProgressTracker.cs" />
      <Compile Include="Assets\Prefabs\Scripts\A.I Scripts\AI_Patrol.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\A.I Scripts\AI_Scared.cs" />
      <Compile Include="Assets\Prefabs\Scripts\A.I Scripts\AI_Script.cs" />
      <Compile Include="Assets\Prefabs\Scripts\A.I Scripts\GroundMonster.cs" />
      <Compile Include="Assets\Prefabs\Scripts\Player_Scripts\DelayTester.cs" />
