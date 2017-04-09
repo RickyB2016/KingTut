@@ -39,10 +39,10 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>D:/Unity2/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>D:/Unity2/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -621,50 +621,65 @@
      <Compile Include="Assets\IgnoreTheseFiles\Standard_Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\IgnoreTheseFiles\Standard_Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\IgnoreTheseFiles\Standard_Assets\Utility\WaypointProgressTracker.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\A.I Scripts\AI_Attack.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\A.I Scripts\AI_Patrol.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\A.I Scripts\AI_Scared.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\A.I Scripts\AI_Script.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\A.I Scripts\GroundMonster.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\Player_Scripts\DelayTester.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\Player_Scripts\Movement.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\Player_Scripts\Possess.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\Player_Scripts\ScalingRage.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\Player_Scripts\Scare.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\Player_Scripts\Test.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\Player_Scripts\rage_script.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\Trigger\TriggerEvent.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\UI\In_Game\HeartSystem.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\UI\Menus\UI\Main Menu PreScript\GameSettings.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\UI\Menus\UI\Main Menu PreScript\MenuScript.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\UI\Menus\UI\Main Menu PreScript\SettingsManager.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\UI\Menus\UI\Pause Menu PreScript\PauseScripts.cs" />
-     <Compile Include="Assets\Prefabs\Scripts\UI\Menus\briefMenus.cs" />
+     <Compile Include="Assets\Scripts\AI_Script.cs" />
+     <Compile Include="Assets\Scripts\Menu\briefMenus.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\AnimController.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\DelayTester.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\Possess.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\Possess_Two.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\ScalingRage.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\Scare.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\Scare_Two.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\Test.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\rage_script.cs" />
+     <Compile Include="Assets\Scripts\Trigger\TriggerEvent.cs" />
+     <Compile Include="Assets\Scripts\UI\In_Game\HealthSystem.cs" />
+     <Compile Include="Assets\Scripts\UI\In_Game\HeartSystem.cs" />
+     <Compile Include="Assets\Scripts\UI\In_Game\Player.cs" />
+     <Compile Include="Assets\Scripts\UI\In_Game\Timer.cs" />
+     <Compile Include="Assets\Scripts\UI\Menus\UI\Main Menu PreScript\GameSettings.cs" />
+     <Compile Include="Assets\Scripts\UI\Menus\UI\Main Menu PreScript\MenuScript.cs" />
+     <Compile Include="Assets\Scripts\UI\Menus\UI\Main Menu PreScript\SettingsManager.cs" />
+     <Compile Include="Assets\Scripts\UI\Menus\UI\Pause Menu PreScript\PauseScripts.cs" />
+     <Compile Include="Assets\Scripts\UI\Menus\inputAnyKey.cs" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\Behavior Designer\Editor\GridShader.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Unity2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>D:/Unity2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.PlaymodeTestsRunner">
- <HintPath>D:/Unity2/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Unity2/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>D:/Unity2/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
- <HintPath>D:/Unity2/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="BehaviorDesignerRuntime">
- <HintPath>C:/Users/John/Desktop/KingTut/Assets/Behavior Designer/Runtime/BehaviorDesignerRuntime.dll</HintPath>
+ <HintPath>C:/Users/nbarden/Desktop/KingTut/Assets/Behavior Designer/Runtime/BehaviorDesignerRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
