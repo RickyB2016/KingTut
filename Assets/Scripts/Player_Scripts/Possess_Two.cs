@@ -40,14 +40,14 @@ public class Possess_Two : MonoBehaviour {
 
     void OnTriggerStay(Collider col)
     {
-        if (col.gameObject.CompareTag("hiero") || col.gameObject.CompareTag("wall") || col.gameObject.CompareTag("tag"))// if a gameobject collides with an object called "trigger" it will satisfy conditions of if statement.
+		/*if (col.gameObject.CompareTag("mummy") || col.gameObject.CompareTag("wall") || col.gameObject.CompareTag("tag"))// if a gameobject collides with an object called "trigger" it will satisfy conditions of if statement.
         {
             closeTo = true;
             print("you are in");
 
-            if (col.gameObject.CompareTag("hiero"))
+            if (col.gameObject.CompareTag("mummy"))
             {
-                print("this is a hiero");
+				print("this is a mummy");
                 Scare_Two scarer;
                 scarer = col.gameObject.GetComponent<Scare_Two>();
                 scarer.hiero_scare();
@@ -60,7 +60,7 @@ public class Possess_Two : MonoBehaviour {
                 scarer = col.gameObject.GetComponent<Scare_Two>();
                 scarer.wall_scare();
             }
-            if (col.gameObject.CompareTag("tag"))
+            /*if (col.gameObject.CompareTag("tag"))
             {
                 print("this is a sphere");
 
@@ -70,12 +70,12 @@ public class Possess_Two : MonoBehaviour {
                     scarer = col.gameObject.GetComponent<Scare_Two>();
                     scarer.Sphere_Scare();
                 }
-            }
+            }//Req
 
 
             // Destroy(col.gameObject); // does something! 
 
-        }
+        }*/
     }
 
     void OnTriggerExit(Collider col)

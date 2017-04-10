@@ -61,3 +61,5 @@ C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunne
 C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.Analytics.xml
 C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\rbarkley4\Desktop\KingTut\Temp\bin\Debug\UnityEngine.VR.xml
+C:\Users\nbarden\Desktop\KingTut\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\nbarden\Desktop\KingTut\obj\Debug\Assembly-CSharp.dll

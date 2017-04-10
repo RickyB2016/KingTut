@@ -621,6 +621,9 @@
      <Compile Include="Assets\IgnoreTheseFiles\Standard_Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\IgnoreTheseFiles\Standard_Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\IgnoreTheseFiles\Standard_Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\Scripts\AI_Attack.cs" />
+     <Compile Include="Assets\Scripts\AI_Patrol.cs" />
+     <Compile Include="Assets\Scripts\AI_Scared.cs" />
      <Compile Include="Assets\Scripts\AI_Script.cs" />
      <Compile Include="Assets\Scripts\Menu\briefMenus.cs" />
      <Compile Include="Assets\Scripts\Player_Scripts\AnimController.cs" />
@@ -634,6 +637,7 @@
      <Compile Include="Assets\Scripts\Player_Scripts\Test.cs" />
      <Compile Include="Assets\Scripts\Player_Scripts\rage_script.cs" />
      <Compile Include="Assets\Scripts\Trigger\TriggerEvent.cs" />
+     <Compile Include="Assets\Scripts\UI\GameOver\GameOverScript.cs" />
      <Compile Include="Assets\Scripts\UI\In_Game\HealthSystem.cs" />
      <Compile Include="Assets\Scripts\UI\In_Game\HeartSystem.cs" />
      <Compile Include="Assets\Scripts\UI\In_Game\Player.cs" />
