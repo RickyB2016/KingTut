@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Models/Levels/Mod kit level/01SHAUN LEVEL/shaun level01.unity
+- path: Assets/Scenes/NinjaScreen.unity
   isLoaded: 1
   isActive: 1

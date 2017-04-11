@@ -647,14 +647,12 @@
      <Compile Include="Assets\Scripts\UI\Menus\UI\Main Menu PreScript\SettingsManager.cs" />
      <Compile Include="Assets\Scripts\UI\Menus\UI\Pause Menu PreScript\PauseScripts.cs" />
      <Compile Include="Assets\Scripts\UI\Menus\inputAnyKey.cs" />
+     <Compile Include="Assets\Scripts\UI\PressAnyKey.cs" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\Behavior Designer\Editor\GridShader.shader" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -670,14 +668,11 @@
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="BehaviorDesignerRuntime">
- <HintPath>C:/Users/nbarden/Desktop/KingTut/Assets/Behavior Designer/Runtime/BehaviorDesignerRuntime.dll</HintPath>
+ <HintPath>C:/Users/rbarkley4/Desktop/KingTut/Assets/Behavior Designer/Runtime/BehaviorDesignerRuntime.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
