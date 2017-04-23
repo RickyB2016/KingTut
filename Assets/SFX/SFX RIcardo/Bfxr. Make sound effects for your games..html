@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0020)http://www.bfxr.net/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" class="gr__bfxr_net"><!-- 
+    Smart developers always View Source. 
+    // --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bfxr.  Make sound effects for your games. </title>
+        
+        <link rel="icon" type="image/png" href="http://www.bfxr.net/favicon.png">        
+        <meta name="description" content="Sound-effects generation for your games in flash.">
+	<meta name="keywords" content="bfxr,Sfxr,flash,sound effects, audio,music generation,music,increpare">
+        
+		<!-- Include CSS to eliminate any default margins/padding and set the height of the html element and 
+		     the body element to 100%, because Firefox, or any Gecko based browser, interprets percentage as 
+			 the percentage of the height of its parent container, which has to be set explicitly.  Fix for
+			 Firefox 3.6 focus border issues.  Initially, don't display flashContent div so it won't show 
+			 if JavaScript disabled.
+		-->
+        <style type="text/css" media="screen"> 
+			html, body	
+			{ 
+				height:100%; 
+				width:630px;
+				margin-top:10px;
+				margin-left: auto;
+  				margin-right: auto; 
+			}
+			h4 
+			{
+			margin-top:0px;
+			}
+			body { padding:0; overflow:auto; 
+			       background-color: black;			       
+			       background-image:url('bg.png');
+			       background-repeat:repeat-y;
+			       background-position:center;
+			       
+			      }
+			object:focus { outline:none; }
+			#flashContent { display:none; }
+        </style>
+	<link rel="stylesheet" href="./Bfxr. Make sound effects for your games._files/example.css" type="text/css" media="screen">
+        
+        <script type="text/javascript">
+
+/* Optional: Temporarily hide the "tabber" class so it does not "flash"
+   on the page as plain HTML. After tabber runs, the class is changed
+   to "tabberlive" and it will appear.
+*/
+document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+
+var tabberOptions = {
+
+  /* Optional: instead of letting tabber run during the onload event,
+     we'll start it up manually. This can be useful because the onload
+     even runs after all the images have finished loading, and we can
+     run tabber at the bottom of our page to start it up faster. See the
+     bottom of this page for more info. Note: this variable must be set
+     BEFORE you include tabber.js.
+  */
+  'manualStartup':true,
+
+  /* Optional: code to run after each tabber object has initialized */
+
+  'onLoad': function(argsObj) {
+    /* Display an alert only after tab2 */
+    if (argsObj.tabber.id == 'tab2') {
+      alert('Finished loading tab2!');
+    }
+  },
+
+  /* Optional: code to run when the user clicks a tab. If this
+     function returns boolean false then the tab will not be changed
+     (the click is canceled). If you do not return a value or return
+     something that is not boolean false, */
+
+  'onClick': function(argsObj) {
+
+    var t = argsObj.tabber; /* Tabber object */
+    var id = t.id; /* ID of the main tabber DIV */
+    var i = argsObj.index; /* Which tab was clicked (0 is the first tab) */
+    var e = argsObj.event; /* Event object */
+
+    if (id == 'tab2') {
+      return confirm('Swtich to '+t.tabs[i].headingText+'?\nEvent type: '+e.type);
+    }
+  },
+
+  /* Optional: set an ID for each tab navigation link */
+  'addLinkId': true
+
+};
+
+</script><style type="text/css">.tabber{display:none;}</style>
+
+<!-- Load the tabber code -->
+<script type="text/javascript" src="./Bfxr. Make sound effects for your games._files/tabber.js.download"></script>
+        
+		
+		    
+        <script type="text/javascript" src="./Bfxr. Make sound effects for your games._files/swfobject.js.download"></script>
+        <script type="text/javascript">
+        function thisMovie(movieName) {
+	         if (navigator.appName.indexOf("Microsoft") != -1) {
+	             return window[movieName];
+	         } else {
+	             return document[movieName];
+	         }
+	     }
+	        
+        
+        function beforeunloadcallback(e) {
+        	if (thisMovie("Bfxr_Flash").hasModifiedData()) {
+			if(!e) e = window.event;
+			//e.cancelBubble is supported by IE - this will kill the bubbling process.
+			e.cancelBubble = true;
+			e.returnValue = 'There are unapplied changes.  Are you sure you want to leave?'; //This is displayed on the dialog
+		
+			//e.stopPropagation works in Firefox.
+			if (e.stopPropagation) {
+				e.stopPropagation();
+				e.preventDefault();
+			}
+		}
+	}
+        window.onbeforeunload=beforeunloadcallback;
+        
+        </script>
+        <script type="text/javascript">
+            <!-- For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection. --> 
+            var swfVersionStr = "11.1.0";
+            <!-- To use express install, set to playerProductInstall.swf, otherwise the empty string. -->
+            var xiSwfUrlStr = "playerProductInstall.swf";
+            var flashvars = {};
+            var params = {};
+            params.quality = "high";
+            params.bgcolor = "#ccbda1";
+            params.allowscriptaccess = "sameDomain";
+            params.allowfullscreen = "true";
+            var attributes = {};
+            attributes.id = "Bfxr_Flash";
+            attributes.name = "Bfxr_Flash";
+            attributes.align = "middle";
+            swfobject.embedSWF(
+                "Bfxr_Flash.swf", "flashContent", 
+                "630", "584", 
+                swfVersionStr, xiSwfUrlStr, 
+                flashvars, params, attributes);
+			<!-- JavaScript enabled so display the flashContent div in case it is not replaced with a swf object. -->
+			swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+        </script><style type="text/css" media="screen">#flashContent {visibility:hidden}#flashContent {display:block;text-align:left;}</style>
+    <script type="text/javascript" src="./Bfxr. Make sound effects for your games._files/genericCommentWrapper2.php"></script><link rel="stylesheet" href="./Bfxr. Make sound effects for your games._files/idcCSS.php" type="text/css"><script src="./Bfxr. Make sound effects for your games._files/comment-func.php" type="text/javascript"></script><script src="./Bfxr. Make sound effects for your games._files/remote-login.php" type="text/javascript"></script></head>
+    <body data-gr-c-s-loaded="true">
+        <!-- SWFObject's dynamic embed method replaces this alternative HTML content with Flash content when enough 
+			 JavaScript and Flash plug-in support is available. The div is initially hidden so that it doesn't show
+			 when JavaScript is disabled.
+		-->
+        <object type="application/x-shockwave-flash" id="Bfxr_Flash" name="Bfxr_Flash" align="middle" data="./Bfxr. Make sound effects for your games._files/Bfxr_Flash.swf.download" width="630" height="584"><param name="quality" value="high"><param name="bgcolor" value="#ccbda1"><param name="allowscriptaccess" value="sameDomain"><param name="allowfullscreen" value="true"></object>
+	   	
+       	<noscript>
+            &lt;object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="630" height="584" id="Bfxr_Flash"&gt;
+                &lt;param name="movie" value="Bfxr_Flash.swf" /&gt;
+                &lt;param name="quality" value="high" /&gt;
+                &lt;param name="bgcolor" value="#ccbda1" /&gt;
+                &lt;param name="allowScriptAccess" value="sameDomain" /&gt;
+                &lt;param name="allowFullScreen" value="true" /&gt;
+                &lt;!--[if !IE]&gt;--&gt;
+                &lt;object type="application/x-shockwave-flash" data="Bfxr_Flash.swf" width="630" height="584"&gt;
+                    &lt;param name="quality" value="high" /&gt;
+                    &lt;param name="bgcolor" value="#ccbda1" /&gt;
+                    &lt;param name="allowScriptAccess" value="sameDomain" /&gt;
+                    &lt;param name="allowFullScreen" value="true" /&gt;
+                &lt;!--&lt;![endif]--&gt;
+                &lt;!--[if gte IE 6]&gt;--&gt;
+                	&lt;p&gt; 
+                		Either scripts and active content are not permitted to run or Adobe Flash Player version
+                		11.1.0 or greater is not installed.
+                	&lt;/p&gt;
+                &lt;!--&lt;![endif]--&gt;
+                    &lt;a href="http://www.adobe.com/go/getflashplayer"&gt;
+                        &lt;img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" /&gt;
+                    &lt;/a&gt;
+                &lt;!--[if !IE]&gt;--&gt;
+                &lt;/object&gt;
+                &lt;!--&lt;![endif]--&gt;
+            &lt;/object&gt;
+	    </noscript>	
+	    
+	    <p>
+				</p><div style="text-align: center;">
+					Download Bfxr Standalone V1.4.1 ( <a href="http://ded.increpare.com/~locus/bfxr_update/Bfxr_WIN.zip" target="_blank">WINDOWS</a> | <a href="http://ded.increpare.com/~locus/bfxr_update/Bfxr_MAC.zip" target="_blank">MAC</a> ) 
+				</div>
+    
+<div class="tabberlive" id="tab1"><ul class="tabbernav"><li class="tabberactive"><a href="javascript:void(null);" title="What is this?" id="tab1nav1">What is this?</a></li><li class=""><a href="javascript:void(null);" title="Secrets!" id="tab1nav2">Secrets!</a></li><li class=""><a href="javascript:void(null);" title="Confusing." id="tab1nav3">Confusing.</a></li><li class=""><a href="javascript:void(null);" title="Code + API" id="tab1nav4">Code + API</a></li><li class=""><a href="javascript:void(null);" title="Credits" id="tab1nav5">Credits</a></li><li class=""><a href="javascript:void(null);" title="Comments" id="tab1nav6">Comments</a></li></ul>
+
+  <div class="tabbertab " title="">
+  <h2>What is this?</h2>  
+       <p>  
+     Bfxr is an elaboration of the glorious <a href="http://drpetter.se/project_sfxr.html">Sfxr</a>, the program of choice for many people looking to make sound effects for computer games.
+     </p><p>
+     Bfxr has moved in the direction of increased complexity and range of expression.  All the buttons that you know and love are here, but there are some new things as well:     
+     </p><ul>
+     <li>5 new waveforms : triangle, breaker, tan, whistle, and pink noise.</li>
+     <li>3 new filters : compression, harmonics, and bitcrusher.</li>
+     <li>Ability to lock parameters during mutation/randomization.</li>
+     <li>Expanded pitch-jumping abilities - good for arpeggiation effects.</li>
+     <li>Visualisation</li>
+     <li>Mixer</li>
+     <li>Keeps your sounds and mixes in persistant lists.</li>
+     <li>Can reverse synths</li>
+     <li>Ability to link directly to sounds</li>
+     </ul>	    
+     You have full rights to all sounds made with bfxr, and are free to use them for any purposes, commercial or otherwise.
+     <p>
+     If you use this for anything cool, or have any suggestions for improvements, or bugs to report, please <a href="mailto:analytic@gmail.com">drop me a mail</a> or leave a comment.
+     </p><p>	    
+     For what it's worth, most of the work on this version was done by me, <a href="http://www.increpare.com/">increpare</a>.  If you appreciate the work I've done, consider <a href="http://www.increpare.com/2010/08/donating/">donating</a>.
+  </p></div>
+  <div class="tabbertab tabbertabhide" title="">  
+<h2>Secrets!</h2>
+<h4>Shortcuts</h4>
+<ul>
+<li>Ctrl+C / Ctrl+V to copy/paste (or Cmd + C/Cmd + V if you're on a Mac).</li> 
+<li>Enter/Return to play.</li>
+</ul> 
+<h4>Tips</h4>
+<p>
+</p><ul>
+<li>If you click on the text beside one of the sliders, it moves the slider back to its default position.</li>
+<li>If you right-click one of the locks, it locks/unlocks all parameters</li>
+<li>you can clear out all your sound lists from by selecting "Clear All" from the Load dropdown menu</li>
+<li>There's some handy info in the tooltips.</li>
+<li>If you don't want to download Adobe AIR for the privilege of a standalone version, you can safely just download this webpage to your hard disk and run it locally.</li>
+<li>You may find it gets slow or stutters sometimes.  If you hit play a second time it should play just fine.  A chief cause of slowness is use of the 'harmonics' parameter in the synth screen.  It's tres beautiful, but be careful with it.  </li>
+<li>Running multiple copies at once is DANGEROUS, only the data from one of them will remain.  So be careful about opening lots of links to sounds that people have made all at once.  However, and this is the tip part: you can paste the URL in with the paste faculty as well (via the button, or ctrl+v).  </li>
+<li>The presets only traverse a small portion of the sonic range of this program.  Try playing around with parmeters, layering them in the mixer, see what happens :)</li>
+<li>If you like the sounds you've made with this, consider putting them into a game, eh? 'tis not hard nowadays to toss a game together.</li>
+</ul>
+<p></p>
+
+  </div>
+
+  <div class="tabbertab tabbertabhide" title="">
+
+<h2>Confusing.</h2>
+Nah, it's not that bad.  You can restrict yourself to using the preset buttons, or working entirely from the mixer tab.  Paying attention to the tooltips might help.
+<p>
+But, you know, if you want something more easy going, try out this program's inspiration: <a href="http://www.superflashbros.net/as3sfxr/">as3sfxr</a>.  It's a direct port of the original Sfxr for flash, and it's totally great and has a whole lot less buttons and sliders than Bfxr.
+</p></div>
+
+<div class="tabbertab tabbertabhide" title="">
+
+<h2>Code + API</h2>
+
+I've put the code up on github
+<ul>
+<li><a href="https://github.com/increpare/bfxr">https://github.com/increpare/bfxr</a> release branch</li>
+<li><a href="https://github.com/increpare/bfxr/tree/dev">https://github.com/increpare/bfxr/tree/dev</a> development branch (very unstable)</li>
+<li><a href="https://github.com/increpare/bfxr">https://github.com/increpare/bfxr-air</a>AIR-specific code/li&gt;
+</li></ul>
+
+<p>
+This is released under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Licence 2.0</a>.  
+</p><p>
+As with <a href="http://www.superflashbros.net/as3sfxr/">Tom's version</a>, the code is quite modular and can be easily incorporated into any as3 project.  
+</p><p>
+</p><ul>
+<li><a href="https://github.com/increpare/bfxr-api-example">https://github.com/increpare/bfxr-api-example</a>Bfxr API example</li>
+</ul>
+The idea is that you can take the strings that you get by clicking 'copy' in the editor, and pass 
+them as strings to the Bfxr object.  The best usage is to pre-cache them using a cache function (with 
+an optional callback, if you want it to spread the calculation over several frames).
+<p>
+It also has the ability to cache several mutations of a single object at run-time.  This can be good for getting a reach-feeling environment, and cuts down on the usual repeitition of sound-effects.  While mutating, it will respect any locks applied to the parameters in the editor, to allow for an additional degree of control over the mutation.
+</p><p>
+Let me know if you do anything cool with it!
+</p><p>
+</p></div>
+
+
+  <div class="tabbertab tabbertabhide" title="">
+<h2>Credits</h2>
+<h4>Archaeology</h4>	
+I don't know if it's related, but I believe that _why made a program called sound foley (which I haven't been able to get to work) which looks quite similar to Sfxr in design based on what I've seen of his _why's presentation of it.<p>	The darling DrPetter made the program this is based on, Sfxr:
+</p><ul>
+	<li>	<a href="http://drpetter.se/">http://drpetter.se/</a></li>		
+	<li>	<a href="http://drpetter.se/article_sound.html">http://drpetter.se/article_sound.html</a></li>		
+	<li>	<a href="http://drpetter.se/project_sfxr.html">http://drpetter.se/project_sfxr.html</a></li>	
+</ul>		
+		
+		The fabulous Tom Vian did a flash port of this, called as3sfxr<br>		
+<ul>		
+	<li>	<a href="http://www.tomvian.com/">http://www.tomvian.com/</a></li>		
+	<li>	<a href="http://www.superflashbros.net/as3sfxr/">http://www.superflashbros.net/as3sfxr/</a></li>	
+</ul>		
+		
+There's also a port of Sfxr to OS X that's quite loved by people (and was a little influential) called cfxr:
+<ul>
+	<li>	<a href="http://thirdcog.eu/apps/cfxr">http://thirdcog.eu/apps/cfxr</a></li>
+</ul>		
+			I did a mod of as3sfxr that introduced some new features, and called it as3sfxr-b:
+<ul>		
+	<li>	<a href="http://ded.increpare.com/~locus/as3sfxr-b/">http://ded.increpare.com/~locus/as3sfxr-b/</a></li>
+</ul>
+After asking for feedback, I spent some time adding and changing more things, making something new.  Which is Bfxr.  Which is what you see on this page.<p></p>
+<p>
+</p><h4>Code from</h4>	
+Bulk of coding of this version done by <a href="http://www.increpare.com/">poor little me</a>.  
+<p> 
+In addition to code from Tom/DrPetter, code snippits taken from 
+</p><ul>		
+	<li>	<a href="http://blog.flexexamples.com/">http://blog.flexexamples.com</a> for a bunch of custom ui stuff</li>		
+	<li>	<a href="http://www.firstpr.com.au/dsp/pink-noise/#Filtering">http://www.firstpr.com.au/dsp/pink-noise/#Filtering</a>  for pink-noise related synthesis </li>
+</ul>  
+<p>
+</p><h4>Thanks + Acknolwedgements</h4>	
+<ul>
+<li><a href="http://drpetter.se/">DrPetter</a>, for Sfxr.</li>
+<li><a href="http://www.tomvian.com/">Tom Vian</a>, for his elegantly constructed as3sfxr port.</li>
+<li><a href="http://www.twitter.com/docky">@docky</a>, <a href="http://www.twitter.com/Draknek">@Draknek</a>, <a href="http://www.twitter.com/KommanderKlobb">@KommanderKlobb</a>, <a href="http://www.twitter.com/eigenbo">@eigenbo</a>, <a href="http://www.twitter.com/GrimFang4">@GrimFang4</a>, <a href="http://www.twitter.com/nyarla">@nyarla</a>, <a href="http://www.twitter.com/bfod">@bfod</a>, <a href="http://www.twitter.com/jasperbyrne">@jasperbyrne</a>, <a href="http://www.twitter.com/draknek">@draknek</a>, <a href="http://www.twitter.com/hybridmind">@hybridmind</a>, <a href="http://www.twitter.com/RinkuHero">@RinkuHero</a>, DustinGunn, <a href="http://runhello.com/">mcc</a>, and <a href="http://blog.agj.cl/">agj</a> for feedback + suggestions.  And <a href="http://www.twitter.com/mossmouth">Derek</a> for some early encouragement.</li>
+<li>The people from the #flex irc room on freenode for technical help in my hour of need, especially <a href="http://www.michelboudreau.com/">J_A_X</a>.</li>
+</ul>
+<p>
+</p><h4>Other software that can be software for making sounds:</h4>
+<ul>	
+<li>Audacity - <a href="http://audacity.sourceforge.net/">http://audacity.sourceforge.net/</a></li>	
+<li>HighC - <a href="http://highc.org/">http://highc.org/</a>	</li>	
+<li>PXTone - <a href="http://buzinkai.net/PXTone/tutorial/">http://buzinkai.net/PXTone/tutorial/</a></li>	
+<li>Sound Effects Generator - <a href="http://www.windowsgames.co.uk/effects.html">http://www.windowsgames.co.uk/effects.html</a> (windows only.  I nicked a couple of things from this.  )</li>
+<li>Freesound - <a href="http://www.freesound.org/">http://www.freesound.org</a> - Okay, not sound software, but a really amazing resource.
+</li></ul>
+</div>
+  
+  
+  <div class="tabbertab tabbertabhide" title="">
+  <h2>Comments</h2>
+
+<script script="" type="text/javascript">
+var idcomments_acct = 'e0848438b269358c7cadd2626957454a';
+var idcomments_post_id;
+var idcomments_post_url;
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<div id="idc-container-parent" class=""><div id="idc-container" class="idc"><div id="IDCommentPopup" style="display: none;" class="idc-info"> <div> <div id="IDCommentPopupInner"> <a href="http://www.bfxr.net/#" class="idc-close"><span>Close</span></a> <h6>Forgot password?</h6> <form> <label for="txtResolveEmail">Please put in your email:</label> <input class="idc-text" id="txtResolveEmail" type="text"> <a href="http://www.bfxr.net/#" class="idc-btn_s"><span>Send me my password!</span></a> </form> <p class="idc-bottom"><a href="http://www.bfxr.net/#">Close message</a></p> </div> <div class="idc-bottom"></div> </div> </div><div id="IDCommentsHead" class="idc-head"> <span id="IDCommentsHeadDivider" style="display:none"></span> <div class="idc-right"> <a href="javascript: showLogin();" id="IDCommentsHeadLogin" class="idc-head_tools-login"><span>Login</span><span class="idc-r"></span></a> <div class="idc-share" onmouseover="showFollowThisDiscussion();" onmouseout="hideFollowThisDiscussion();"> <div class="idc-share_inner" id="IDCommentsHeadFollowMenu" onmouseover="showFollowThisDiscussion();" onmouseout="hideFollowThisDiscussion();"> <ul class="idc-share-tabs" onmouseover="showFollowThisDiscussion();" onmouseout="hideFollowThisDiscussion();"> <li id="IDShareMenuPost" class="idc-sel"><a href="javascript: IDShowFollowPost();"><span>This blog post</span></a></li> <li id="IDShareMenuBlog"><a href="javascript: IDShowFollowBlog();"><span>All blog posts</span></a></li> </ul> <div id="divIdcSharePost" onmouseover="showFollowThisDiscussion();" onmouseout="hideFollowThisDiscussion();"> <p>Subscribe to this blog post's comments through...</p> <ul class="idc-share-list"> <li><a href="http://www.netvibes.com/subscribe.php?type=rss&amp;url=https://www.intensedebate.com/postRSS/441830655"><img id="IDCommentsShowNetvibes" width="91" height="17" border="0" alt="Add to netvibes"></a></li> <li><a href="http://add.my.yahoo.com/rss?url=https://www.intensedebate.com/postRSS/441830655"><img id="IDCommentsShowYahoo" border="0" alt="Add to My Yahoo!"></a></li> </ul> <ul class="idc-share-list"> <li><a href="http://fusion.google.com/add?source=atgs&amp;feedurl=https://www.intensedebate.com/postRSS/441830655"><img id="IDCommentsShowGoogle" border="0" alt="Add to Google"></a></li> <li><a href="http://my.msn.com/addtomymsn.armx?id=rss&amp;ut=https://www.intensedebate.com/postRSS/441830655"><img id="IDCommentsShowMsn" border="0" style="width: 92px; height: 17px;" alt="Add to Microsoft Live"></a></li> </ul> <p class="idc-b"><a href="https://www.intensedebate.com/postRSS/441830655"><img id="IDCommentsShowRss" alt="RSS Icon"> RSS Feed</a></p> <div class="idc-subscribe-email"> <p><strong>Subscribe via email</strong></p> <span id="IDCSubscribeSpan0"><input type="text" value="Email Address" id="IDCSubscribeEmail0" class="idc-text" onfocus="this.style.color=&#39;#333&#39;;this.value=&#39;&#39;;" onblur="if(this.value==&#39;&#39;){this.style.color=&#39;#ccc&#39;;this.value=&#39;Email Address&#39;;}"></span> <span id="IDCSubscribeSubmit0"><a class="idc-btn_s" href="javascript:IDCSubscribeByEmail(0);"><span></span><span class="idc-r">Subscribe</span></a> </span> </div> </div> <div id="divIdcShareBlog" style="display:none" onmouseover="showFollowThisDiscussion();" onmouseout="hideFollowThisDiscussion();"> <p>Subscribe to this blog's comments through...</p> <ul class="idc-share-list"> <li><a href="http://www.netvibes.com/subscribe.php?type=rss&amp;url=https://www.intensedebate.com/allBlogCommentsRSS/255803"><img id="IDCommentsShowNetvibes2" width="91" height="17" border="0" alt="Add to netvibes"></a></li> <li><a href="http://add.my.yahoo.com/rss?url=https://www.intensedebate.com/allBlogCommentsRSS/255803"><img border="0" alt="Add to My Yahoo!" id="IDCommentsShowYahoo2"></a></li> </ul> <ul class="idc-share-list"> <li><a href="http://fusion.google.com/add?source=atgs&amp;feedurl=https://www.intensedebate.com/allBlogCommentsRSS/255803"><img id="IDCommentsShowGoogle2" border="0" alt="Add to Google"></a></li> <li><a href="http://my.msn.com/addtomymsn.armx?id=rss&amp;ut=https://www.intensedebate.com/allBlogCommentsRSS/255803"><img border="0" id="IDCommentsShowMsn2" style="width: 92px; height: 17px;" alt="Add to Microsoft Live"></a></li> </ul> <p class="idc-b"><a href="https://www.intensedebate.com/allBlogCommentsRSS/255803"><img alt="RSS Icon" id="IDCommentsShowRss2"> RSS Feed</a></p> <div class="idc-subscribe-email"> <p><strong>Subscribe via email</strong></p> <span id="IDCSubscribeSpan1"><input type="text" value="Email Address" id="IDCSubscribeEmail1" class="idc-text" onfocus="this.style.color=&#39;#333&#39;;this.value=&#39;&#39;;" onblur="if(this.value==&#39;&#39;){this.style.color=&#39;#ccc&#39;;this.value=&#39;Email Address&#39;;}"></span> <span id="IDCSubscribeSubmit1"><a class="idc-btn_s" href="javascript:IDCSubscribeByEmail(1);"><span></span><span class="idc-r">Subscribe</span></a> </span> </div> </div> </div> <a href="https://www.intensedebate.com/postRSS/441830655" class="idc-head_tools-share" title="https://www.intensedebate.com/postRSS/441830655" onmouseover="showFollowThisDiscussion();" onmouseout="hideFollowThisDiscussion();">Follow the discussion</a> </div> </div><h3><span id="idc-commentcount_label">Comments</span><span id="idc-commentcount_wrap"> (<span id="idc-commentcount">225</span>)</span></h3><input type="hidden" id="userid" value=""> <div class="idc-head_action idc-loggingin"> <span><img style="padding-right: 5px" src="./Bfxr. Make sound effects for your games._files/ajax-loader.gif" alt="Loading..."> Logging you in...</span> </div> <div class="idc-head_action idc-login" id="IDLoginPopup"> <form id="IDfrmHeaderLogin" method="post" action="https://www.intensedebate.com/login"> <a href="javascript: hideLoginSignup();" class="idc-close"><span>Close</span></a> <p><strong>Login to IntenseDebate</strong></p> <p>Or <a href="https://www.intensedebate.com/signup" class="snap_noshots" target="_blank">create an account</a></p> <div class="idc-columns"> <div class="idc-divide"> <label for="IDtxtLoginEmail">Username or Email:</label> </div> <div class="idc-divide"> <label for="IDtxtLoginPass">Password:</label> </div> <span class="idc-clear"></span> </div> <div class="idc-divide"> <input id="IDtxtLoginEmail" name="txtLoginEmail" value="" class="idc-text" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);" type="text"> </div> <div class="idc-divide"> <input id="IDtxtLoginPass" name="txtLoginPass" class="idc-text idc-password" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);" type="password"> <p class="idc-fade"><a href="javascript: showForgotPassword();" class="snap_noshots">Forgot login?</a></p> </div> <div class="idc-head_b"> <div class="idc-tools"> <a class="idc-btn_l-secondary" href="javascript: hideLoginSignup();"><span></span><span class="idc-r">Cancel</span></a> <a href="javascript: logUserIn();" class="idc-btn_l"><span></span><span class="idc-r"><strong>Login</strong></span></a> </div> </div> </form> </div> <div class="idc-head_action idc-wp-login" id="IDWPLoginPopup"> <form id="IDfrmHeaderWPLogin" method="post" action="https://www.intensedebate.com/wp-login.php"> <a href="javascript: hideLoginSignup();" class="idc-close"><span>Close</span></a> <span> <img src="./Bfxr. Make sound effects for your games._files/wordpress-logo.png" style="margin-bottom: -10px;"> <span style="font-size: 25px; padding-left: 5px; font-family: verdana,serif;">WordPress.com</span> </span> <div class="idc-columns" style="padding-top: 20px;"> <div class="idc-divide"> <label for="IDtxtWPLoginEmail">Username or Email:</label> </div> <div class="idc-divide"> <label for="IDtxtWPLoginPass">Password:</label> </div> <span class="idc-clear"></span> </div> <div class="idc-divide"> <input id="IDtxtWPLoginEmail" name="txtLoginEmail" value="" class="idc-text" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);" type="text"> </div> <div class="idc-divide"> <input id="IDtxtWPLoginPass" name="txtLoginPass" class="idc-text idc-password" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);" type="password"> <p class="idc-fade"><a href="http://wordpress.com/wp-login.php?action=lostpassword" target="_new" class="snap_noshots">Lost your password?</a></p> </div> <div class="idc-head_b"> <div class="idc-tools"> <input type="hidden" name="IDtxtWPIDSiteID" value="255803"> <a class="idc-btn_l-secondary" href="javascript: hideLoginSignup();"><span></span><span class="idc-r">Cancel</span></a> <a href="javascript: IDC.$(&#39;IDfrmHeaderWPLogin&#39;).submit()" class="idc-btn_l"><span></span><span class="idc-r"><strong>Login</strong></span></a> </div> </div> </form> </div> <div class="idc-head_action idc-user"> <div class="idc-right"> <a class="snap_noshots" href="https://www.intensedebate.com/userDash">Dashboard</a> <span class="idc-divider"><span>|</span></span> <a class="snap_noshots" href="https://www.intensedebate.com/editprofile">Edit profile</a> <span class="idc-divider"><span>|</span></span> <a class="snap_noshots" href="https://www.intensedebate.com/logout?_id_nonce=" id="idc-logout-link">Logout</a> </div> <div> <a id="IDCommentUserBarLink1" href="https://www.intensedebate.com/people/0" class="idc-a snap_noshots"></a> </div> <ul class="idc-user_i"> <li>Logged in as <a id="IDCommentUserBarLink2" class="snap_noshots" href="https://www.intensedebate.com/people/0"></a></li> </ul> <div class="idc-user_admin" id="idc-user_admin" style="display:none;"> <p><a href="javascript:showHideOpts();" id="IDAdminOptsLink" class="idc-collapselink_closed snap_noshots">Admin Options</a></p> <div id="showHideAdminOpts" style="display:none;"> <p> <input type="hidden" id="IDUserAdminVal" value="1"> <span onclick="javascript: changeDisabledLink();"><label for="chkDisableIDC" class="idc-nofloat"><input type="checkbox" id="chkDisableIDC"> Disable comments for this page</label></span> </p><p><a id="adminOptions" class="idc-btn_s snap_noshots"><span></span><span class="idc-r" id="IDCSavedSettings">Save Settings</span></a></p> <p></p> </div> </div> </div> <div class="idc-toolbar" id="idc-toolbar"> <div id="idc-sortLinks"> <p>Sort by: <a id="IDSortLink1" href="javascript: sortComments(1);" class="idc-sel">Date</a> <a id="IDSortLink0" href="javascript: sortComments(0);">Rating</a> <a id="IDSortLink2" href="javascript: sortComments(2);">Last Activity</a></p> </div> <div id="idc-sortLinksLoading" style="display:none"> Loading comments... </div> </div><span class="idc-clear"></span><div class="idc-message" id="commentMessage" style="display:none;"></div></div><div id="idc-cover" class="idc-comments">	<div class="idc-thread" id="IDThread137574866"><div id="IDComment137574866" class="idc-c idc-anonymous "><div class="idc-c-h"> <div class="idc-c-h-inner"> <div class="idc-v"> <span class="idc-v-total" id="IDCommentVoteScore137574866">+16</span> <a class="idc-v-up" href="javascript: voteComment(137574866, 1)"><span>Vote up</span></a> <a class="idc-v-down" href="javascript: voteComment(137574866, 0)"><span>Vote down</span></a> </div> <a href="http://www.atien.net/" class="idc-a"><img alt="&#39;s avatar - Go to profile" src="./Bfxr. Make sound effects for your games._files/5cc00b0371fd3f4a66874011e3d41944" height="26" width="26" class="idc-avatar"> </a> <p class="idc-i"> <a href="http://www.atien.net/" rel="nofollow"> Ats </a> <em class="idc-time">· <a title="Comment Permalink" href="http://www.bfxr.net/#IDComment137574866" id="IDCommentTime137574866" class="IDCommentTime">316 weeks ago</a></em> </p> </div></div> <div id="IDCommentTop137574866" class="idc-c-t"> <div id="IDComment-CommentText137574866" class="idc-c-t-inner"> Many thanks for the update and everything! This software is awesome and releasing it as an API is very convenient. I'll try the mutation thing for my next little project. </div> </div> <div id="IDCommentBottom137574866" class="idc-c-b"> <div class="idc-right" id="IDCommentLinksRight137574866"> </div> <div id="IDCommentPostReplyLink137574866"> <a class="idc-btn_s" href="javascript: showReply(137574866)"><span><input type="hidden" id="reqUsersOn" value="no"></span><span class="idc-r">Reply</span></a> </div> <span style="display: none" id="IDCommentCollapseLinkWrapper137574866"><a href="javascript: collapseThread(137574866);" id="IDCommentCollapseLink137574866" class="idc-collapselink">0 replies </a> <em class="idc-thread_active">· <span id="IDCommentThreadTime137574866" class="IDCommentThreadTimeRead">active less than 1 minute ago</span></em></span> <span class="idc-clear"></span> </div></div><div id="IDCommentSubThread137574866" class="idc-thread"></div></div>	<div class="idc-thread idc-collapse" id="IDThread137601116"><div id="IDComment137601116" class="idc-c idc-anonymous "><div class="idc-c-h"> <div class="idc-c-h-inner"> <div class="idc-v"> <span class="idc-v-total" id="IDCommentVoteScore137601116">+1</span> <a class="idc-v-up" href="javascript: voteComment(137601116, 1)"><span>Vote up</span></a> <a class="idc-v-down" href="javascript: voteComment(137601116, 0)"><span>Vote down</span></a> </div> <span class="idc-a"><img alt="Anonymous&#39;s avatar" src="./Bfxr. Make sound effects for your games._files/avatar-normal.png" height="26" width="26" class="idc-avatar"> </span> <p class="idc-i"> <span> Anonymous </span> <em class="idc-time">· <a title="Comment Permalink" href="http://www.bfxr.net/#IDComment137601116" id="IDCommentTime137601116" class="IDCommentTime">316 weeks ago</a></em> </p> </div></div> <div id="IDCommentTop137601116" class="idc-c-t"> <div id="IDComment-CommentText137601116" class="idc-c-t-inner"> Saving a sound to hard drive doesn't work. D: </div> </div> <div id="IDCommentBottom137601116" class="idc-c-b"> <div class="idc-right" id="IDCommentLinksRight137601116"> </div> <div id="IDCommentPostReplyLink137601116"> <a class="idc-btn_s" href="javascript: showReply(137601116)"><span><input type="hidden" id="reqUsersOn" value="no"></span><span class="idc-r">Reply</span></a> </div> <a href="javascript: collapseThread(137601116);" id="IDCommentCollapseLink137601116" class="idc-collapselink_closed">4 replies </a> <em class="idc-thread_active">· <span id="IDCommentThreadTime137601116" class="IDCommentThreadTimeRead">active 170 weeks ago</span></em> <span class="idc-clear"></span> </div></div><div id="IDCommentSubThread137601116" class="idc-thread"></div></div>	<div class="idc-thread" id="IDThread137793713"><div id="IDComment137793713" class="idc-c idc-anonymous "><div class="idc-c-h"> <div class="idc-c-h-inner"> <div class="idc-v"> <span class="idc-v-total" id="IDCommentVoteScore137793713">-3</span> <a class="idc-v-up" href="javascript: voteComment(137793713, 1)"><span>Vote up</span></a> <a class="idc-v-down" href="javascript: voteComment(137793713, 0)"><span>Vote down</span></a> </div> <a href="http://studioeres.com/" class="idc-a"><img alt="&#39;s avatar - Go to profile" src="./Bfxr. Make sound effects for your games._files/b817a35edf154cd3fb043ae7b5028949" height="26" width="26" class="idc-avatar"> </a> <p class="idc-i"> <a href="http://studioeres.com/" rel="nofollow"> rinkuhero </a> <em class="idc-time">· <a title="Comment Permalink" href="http://www.bfxr.net/#IDComment137793713" id="IDCommentTime137793713" class="IDCommentTime">316 weeks ago</a></em> </p> </div></div> <div id="IDCommentTop137793713" class="idc-c-t"> <div id="IDComment-CommentText137793713" class="idc-c-t-inner"> bug report: <br> <br>6,0.09,0.16,0.26,0.095,0.805,0.4617,0.5842,0.38,-0.1187,0.5724,0.1822,0.27,0.645,0.415,0.378,0.7683,0.0792,1,0.0713,0.1438,-0.9765,0.315,0.6493,0.475,0.883,0.53,0.48,0.355,0.79,0.805,-0.935,masterVolume <br> <br>volume changing doesn't work with this sound: if volume is 0.03 or 1.0, they both sound equal volume to me </div> </div> <div id="IDCommentBottom137793713" class="idc-c-b"> <div class="idc-right" id="IDCommentLinksRight137793713"> </div> <div id="IDCommentPostReplyLink137793713"> <a class="idc-btn_s" href="javascript: showReply(137793713)"><span><input type="hidden" id="reqUsersOn" value="no"></span><span class="idc-r">Reply</span></a> </div> <span style="display: none" id="IDCommentCollapseLinkWrapper137793713"><a href="javascript: collapseThread(137793713);" id="IDCommentCollapseLink137793713" class="idc-collapselink">0 replies </a> <em class="idc-thread_active">· <span id="IDCommentThreadTime137793713" class="IDCommentThreadTimeRead">active less than 1 minute ago</span></em></span> <span class="idc-clear"></span> </div></div><div id="IDCommentSubThread137793713" class="idc-thread"></div></div>	<div class="idc-thread" id="IDThread137809083"><div id="IDComment137809083" class="idc-c idc-admin "><div class="idc-c-h"> <div class="idc-c-h-inner"> <div class="idc-m" id="IDUserMenu137809083" onmouseover="clearTimeout( IDC.popupMenuTimeout );" onmouseout="IDC.popupMenuTimeout = setTimeout( &#39;IDC.user_menu.hide(137809083);&#39;, 250 );"> <div class="idc-m-avatar idc-m-avatar-loading"> <img alt="Loading..." src="./Bfxr. Make sound effects for your games._files/idc-m-loading.gif" class="idc-m-loadingimg"> </div> </div> <div class="idc-v"> <span class="idc-v-total" id="IDCommentVoteScore137809083">+7</span> <a class="idc-v-up" href="javascript: voteComment(137809083, 1)"><span>Vote up</span></a> <a class="idc-v-down" href="javascript: voteComment(137809083, 0)"><span>Vote down</span></a> </div> <a href="https://www.intensedebate.com/people/increpatio" class="idc-a" onmouseover="IDC.user_menu.show(&#39;IDUserMenu137809083&#39;, 2799543)"><img src="./Bfxr. Make sound effects for your games._files/ca845090d87944529a93ba120adfc2cc" class="idc-avatar" alt="increpatio&#39;s avatar - Go to profile"> </a> <p class="idc-i"> <a href="https://www.intensedebate.com/people/increpatio">increpatio</a> <span class="idc-rep idc-level1" title="User&#39;s reputation score. The better commenter, the greater number."><span></span><span class="idc-r" onclick="showReputationWhy(137809083);">46p</span></span> <em class="idc-time"> ·  <a title="Comment Permalink" href="http://www.bfxr.net/#IDComment137809083" id="IDCommentTime137809083" class="IDCommentTime">316 weeks ago</a></em> </p> </div></div> <div id="IDCommentTop137809083" class="idc-c-t"> <div id="IDComment-CommentText137809083" class="idc-c-t-inner"> Thanks for that rinku. Fixed now. I was applying amplitude clamping at the wrong time, which the ever-naughty tan waves were abusing. If you have the AIR version it should automatically update, if you use the website you may have to refresh the page. <br> <br>I know in general I should be pretty careful about changing how things sound, but I figure people will let relatively minor things like this slide in the first week anyway...maybe I should keep a page of links to air builds of earlier versions. Hmm. </div> </div> <div id="IDCommentBottom137809083" class="idc-c-b"> <div class="idc-right" id="IDCommentLinksRight137809083"> </div> <div id="IDCommentPostReplyLink137809083"> <a class="idc-btn_s" href="javascript: showReply(137809083)"><span><input type="hidden" id="reqUsersOn" value="no"></span><span class="idc-r">Reply</span></a> </div> <span style="display: none" id="IDCommentCollapseLinkWrapper137809083"><a href="javascript: collapseThread(137809083);" id="IDCommentCollapseLink137809083" class="idc-collapselink">0 replies </a> <em class="idc-thread_active">· <span id="IDCommentThreadTime137809083" class="IDCommentThreadTimeRead">active 83 weeks ago</span></em></span> <span class="idc-clear"></span> </div></div><div id="IDCommentSubThread137809083" class="idc-thread"></div></div>	<div class="idc-thread idc-collapse" id="IDThread138376092"><div id="IDComment138376092" class="idc-c idc-anonymous "><div class="idc-c-h"> <div class="idc-c-h-inner"> <div class="idc-v"> <span class="idc-v-total" id="IDCommentVoteScore138376092">+2</span> <a class="idc-v-up" href="javascript: voteComment(138376092, 1)"><span>Vote up</span></a> <a class="idc-v-down" href="javascript: voteComment(138376092, 0)"><span>Vote down</span></a> </div> <span class="idc-a"><img alt="Guest&#39;s avatar" src="./Bfxr. Make sound effects for your games._files/aeca6446f77a6291f644d8a63274ea1d" height="26" width="26" class="idc-avatar"> </span> <p class="idc-i"> <span> Guest </span> <em class="idc-time">· <a title="Comment Permalink" href="http://www.bfxr.net/#IDComment138376092" id="IDCommentTime138376092" class="IDCommentTime">316 weeks ago</a></em> </p> </div></div> <div id="IDCommentTop138376092" class="idc-c-t"> <div id="IDComment-CommentText138376092" class="idc-c-t-inner"> This is an incredible application! I have a suggestion for an improvement. Would it be possible (in the future) to either import old SFX from the original SFS format or else to convert them to the new BFXR type? I have a heavy number of these sounds &amp; I'd like to be able to use them with your application. </div> </div> <div id="IDCommentBottom138376092" class="idc-c-b"> <div class="idc-right" id="IDCommentLinksRight138376092"> </div> <div id="IDCommentPostReplyLink138376092"> <a class="idc-btn_s" href="javascript: showReply(138376092)"><span><input type="hidden" id="reqUsersOn" value="no"></span><span class="idc-r">Reply</span></a> </div> <a href="javascript: collapseThread(138376092);" id="IDCommentCollapseLink138376092" class="idc-collapselink_closed">1 reply </a> <em class="idc-thread_active">· <span id="IDCommentThreadTime138376092" class="IDCommentThreadTimeRead">active 197 weeks ago</span></em> <span class="idc-clear"></span> </div></div><div id="IDCommentSubThread138376092" class="idc-thread"></div></div>	<div class="idc-thread idc-collapse" id="IDThread138384209"><div id="IDComment138384209" class="idc-c idc-admin "><div class="idc-c-h"> <div class="idc-c-h-inner"> <div class="idc-m" id="IDUserMenu138384209" onmouseover="clearTimeout( IDC.popupMenuTimeout );" onmouseout="IDC.popupMenuTimeout = setTimeout( &#39;IDC.user_menu.hide(138384209);&#39;, 250 );"> <div class="idc-m-avatar idc-m-avatar-loading"> <img alt="Loading..." src="./Bfxr. Make sound effects for your games._files/idc-m-loading.gif" class="idc-m-loadingimg"> </div> </div> <div class="idc-v"> <span class="idc-v-total" id="IDCommentVoteScore138384209">+6</span> <a class="idc-v-up" href="javascript: voteComment(138384209, 1)"><span>Vote up</span></a> <a class="idc-v-down" href="javascript: voteComment(138384209, 0)"><span>Vote down</span></a> </div> <a href="https://www.intensedebate.com/people/increpatio" class="idc-a" onmouseover="IDC.user_menu.show(&#39;IDUserMenu138384209&#39;, 2799543)"><img src="./Bfxr. Make sound effects for your games._files/ca845090d87944529a93ba120adfc2cc" class="idc-avatar" alt="increpatio&#39;s avatar - Go to profile"> </a> <p class="idc-i"> <a href="https://www.intensedebate.com/people/increpatio">increpatio</a> <span class="idc-rep idc-level1" title="User&#39;s reputation score. The better commenter, the greater number."><span></span><span class="idc-r" onclick="showReputationWhy(138384209);">46p</span></span> <em class="idc-time"> ·  <a title="Comment Permalink" href="http://www.bfxr.net/#IDComment138384209" id="IDCommentTime138384209" class="IDCommentTime">316 weeks ago</a></em> </p> </div></div> <div id="IDCommentTop138384209" class="idc-c-t"> <div id="IDComment-CommentText138384209" class="idc-c-t-inner"> Thanks. <br> <br>&gt;Would it be possible (in the future) to either import old SFX from the original SFS format or else to convert them to the new BFXR type? <br> <br>Yes, Bfxr is a strict extension. It's a difference of a couple couple of extra parameters. I think I stripped out the code for loading the Sfs files that was already present in as3sfxr. It wouldn't be hard to reintroduce that code into Bfxr, but would take a little bit of rewriting. Do you have the chops to try doing that yourself? If you can, I'll happily accept the code back. <br> <br>If not, I can add it to my list to do list, but probably amn't going to work on this again for another week or two. </div> </div> <div id="IDCommentBottom138384209" class="idc-c-b"> <div class="idc-right" id="IDCommentLinksRight138384209"> </div> <div id="IDCommentPostReplyLink138384209"> <a class="idc-btn_s" href="javascript: showReply(138384209)"><span><input type="hidden" id="reqUsersOn" value="no"></span><span class="idc-r">Reply</span></a> </div> <a href="javascript: collapseThread(138384209);" id="IDCommentCollapseLink138384209" class="idc-collapselink_closed">1 reply </a> <em class="idc-thread_active">· <span id="IDCommentThreadTime138384209" class="IDCommentThreadTimeRead">active 316 weeks ago</span></em> <span class="idc-clear"></span> </div></div><div id="IDCommentSubThread138384209" class="idc-thread"></div></div>	<div class="idc-thread idc-collapse" id="IDThread138394718"><div id="IDComment138394718" class="idc-c idc-anonymous "><div class="idc-c-h"> <div class="idc-c-h-inner"> <div class="idc-v"> <span class="idc-v-total" id="IDCommentVoteScore138394718">+2</span> <a class="idc-v-up" href="javascript: voteComment(138394718, 1)"><span>Vote up</span></a> <a class="idc-v-down" href="javascript: voteComment(138394718, 0)"><span>Vote down</span></a> </div> <span class="idc-a"><img alt="Guest&#39;s avatar" src="./Bfxr. Make sound effects for your games._files/aeca6446f77a6291f644d8a63274ea1d" height="26" width="26" class="idc-avatar"> </span> <p class="idc-i"> <span> Guest </span> <em class="idc-time">· <a title="Comment Permalink" href="http://www.bfxr.net/#IDComment138394718" id="IDCommentTime138394718" class="IDCommentTime">316 weeks ago</a></em> </p> </div></div> <div id="IDCommentTop138394718" class="idc-c-t"> <div id="IDComment-CommentText138394718" class="idc-c-t-inner"> I don't have the skill necessary to code, it would probably take me years to even attempt it. You have my sincere appreciation for whenever your able to get to it. Thank you again. </div> </div> <div id="IDCommentBottom138394718" class="idc-c-b"> <div class="idc-right" id="IDCommentLinksRight138394718"> </div> <div id="IDCommentPostReplyLink138394718"> <a class="idc-btn_s" href="javascript: showReply(138394718)"><span><input type="hidden" id="reqUsersOn" value="no"></span><span class="idc-r">Reply</span></a> </div> <a href="javascript: collapseThread(138394718);" id="IDCommentCollapseLink138394718" class="idc-collapselink_closed">1 reply </a> <em class="idc-thread_active">· <span id="IDCommentThreadTime138394718" class="IDCommentThreadTimeRead">active less than 1 minute ago</span></em> <span class="idc-clear"></span> </div></div><div id="IDCommentSubThread138394718" class="idc-thread"></div></div>	<div class="idc-thread idc-collapse" id="IDThread138409810"><div id="IDComment138409810" class="idc-c idc-anonymous "><div class="idc-c-h"> <div class="idc-c-h-inner"> <div class="idc-v"> <span class="idc-v-total" id="IDCommentVoteScore138409810">+3</span> <a class="idc-v-up" href="javascript: voteComment(138409810, 1)"><span>Vote up</span></a> <a class="idc-v-down" href="javascript: voteComment(138409810, 0)"><span>Vote down</span></a> </div> <span class="idc-a"><img alt="Edd&#39;s avatar" src="./Bfxr. Make sound effects for your games._files/aec0068b932c6110cd5dbd095ec5e564" height="26" width="26" class="idc-avatar"> </span> <p class="idc-i"> <span> Edd </span> <em class="idc-time">· <a title="Comment Permalink" href="http://www.bfxr.net/#IDComment138409810" id="IDCommentTime138409810" class="IDCommentTime">316 weeks ago</a></em> </p> </div></div> <div id="IDCommentTop138409810" class="idc-c-t"> <div id="IDComment-CommentText138409810" class="idc-c-t-inner"> This is a great improvement to sfxr, which I use extensively in my game projects! Do you think could add looping playback back in? <br>I would also kill to be able to control the volume curve of sounds in the mixer to crossfade etc, I always have to bring my sfxr sounds into an external program to pull out pops at the end of sounds and make them less harsh. <br>Thanks for the great job! </div> </div> <div id="IDCommentBottom138409810" class="idc-c-b"> <div class="idc-right" id="IDCommentLinksRight138409810"> </div> <div id="IDCommentPostReplyLink138409810"> <a class="idc-btn_s" href="javascript: showReply(138409810)"><span><input type="hidden" id="reqUsersOn" value="no"></span><span class="idc-r">Reply</span></a> </div> <a href="javascript: collapseThread(138409810);" id="IDCommentCollapseLink138409810" class="idc-collapselink_closed">1 reply </a> <em class="idc-thread_active">· <span id="IDCommentThreadTime138409810" class="IDCommentThreadTimeRead">active less than 1 minute ago</span></em> <span class="idc-clear"></span> </div></div><div id="IDCommentSubThread138409810" class="idc-thread"></div></div>	<div class="idc-thread idc-collapse" id="IDThread138420675"><div id="IDComment138420675" class="idc-c idc-anonymous "><div class="idc-c-h"> <div class="idc-c-h-inner"> <div class="idc-v"> <span class="idc-v-total" id="IDCommentVoteScore138420675">+1</span> <a class="idc-v-up" href="javascript: voteComment(138420675, 1)"><span>Vote up</span></a> <a class="idc-v-down" href="javascript: voteComment(138420675, 0)"><span>Vote down</span></a> </div> <a href="http://www.davidmolnarproductions.com/" class="idc-a"><img alt="&#39;s avatar - Go to profile" src="./Bfxr. Make sound effects for your games._files/9b1b71b503f0f440d9c05e80a704571d" height="26" width="26" class="idc-avatar"> </a> <p class="idc-i"> <a href="http://www.davidmolnarproductions.com/" rel="nofollow"> David Molnar </a> <em class="idc-time">· <a title="Comment Permalink" href="http://www.bfxr.net/#IDComment138420675" id="IDCommentTime138420675" class="IDCommentTime">316 weeks ago</a></em> </p> </div></div> <div id="IDCommentTop138420675" class="idc-c-t"> <div id="IDComment-CommentText138420675" class="idc-c-t-inner"> Is BFXR just for Windows or is there a Mac OSX port? </div> </div> <div id="IDCommentBottom138420675" class="idc-c-b"> <div class="idc-right" id="IDCommentLinksRight138420675"> </div> <div id="IDCommentPostReplyLink138420675"> <a class="idc-btn_s" href="javascript: showReply(138420675)"><span><input type="hidden" id="reqUsersOn" value="no"></span><span class="idc-r">Reply</span></a> </div> <a href="javascript: collapseThread(138420675);" id="IDCommentCollapseLink138420675" class="idc-collapselink_closed">3 replies </a> <em class="idc-thread_active">· <span id="IDCommentThreadTime138420675" class="IDCommentThreadTimeRead">active 228 weeks ago</span></em> <span class="idc-clear"></span> </div></div><div id="IDCommentSubThread138420675" class="idc-thread"></div></div>	<div class="idc-thread idc-collapse" id="IDThread138487816"><div id="IDComment138487816" class="idc-c idc-anonymous "><div class="idc-c-h"> <div class="idc-c-h-inner"> <div class="idc-v"> <span class="idc-v-total" id="IDCommentVoteScore138487816">0</span> <a class="idc-v-up" href="javascript: voteComment(138487816, 1)"><span>Vote up</span></a> <a class="idc-v-down" href="javascript: voteComment(138487816, 0)"><span>Vote down</span></a> </div> <a href="http://iterationgames.com/" class="idc-a"><img alt="&#39;s avatar - Go to profile" src="./Bfxr. Make sound effects for your games._files/f19904e15ed5030cbd2ac59d0417a17b" height="26" width="26" class="idc-avatar"> </a> <p class="idc-i"> <a href="http://iterationgames.com/" rel="nofollow"> jph </a> <em class="idc-time">· <a title="Comment Permalink" href="http://www.bfxr.net/#IDComment138487816" id="IDCommentTime138487816" class="IDCommentTime">316 weeks ago</a></em> </p> </div></div> <div id="IDCommentTop138487816" class="idc-c-t"> <div id="IDComment-CommentText138487816" class="idc-c-t-inner"> Very nice,. one quibble,. wouldn't it be better to show all the perameters at once ? instead of having to scroll down,. even the downloaded ver. sets the window too small to access all the perameters? Could not this window be resizable? I will look into the code/API to see if I can add sound generation to my games using this,. . Thanks </div> </div> <div id="IDCommentBottom138487816" class="idc-c-b"> <div class="idc-right" id="IDCommentLinksRight138487816"> </div> <div id="IDCommentPostReplyLink138487816"> <a class="idc-btn_s" href="javascript: showReply(138487816)"><span><input type="hidden" id="reqUsersOn" value="no"></span><span class="idc-r">Reply</span></a> </div> <a href="javascript: collapseThread(138487816);" id="IDCommentCollapseLink138487816" class="idc-collapselink_closed">4 replies </a> <em class="idc-thread_active">· <span id="IDCommentThreadTime138487816" class="IDCommentThreadTimeRead">active 17 weeks ago</span></em> <span class="idc-clear"></span> </div></div><div id="IDCommentSubThread138487816" class="idc-thread"></div></div><div id="idc-pager" class="idc-pager"><span class="idc-sel">1</span><a href="javascript: IDPageLoad(1, &#39;previous&#39;)">2</a><a href="javascript: IDPageLoad(2, &#39;previous&#39;)">3</a><a href="javascript: IDPageLoad(3, &#39;previous&#39;)">4</a><a href="javascript: IDPageLoad(4, &#39;previous&#39;)">5</a><a href="javascript: IDPageLoad(5, &#39;previous&#39;)">6</a><a href="javascript: IDPageLoad(6, &#39;previous&#39;)">7</a><a href="javascript: IDPageLoad(7, &#39;previous&#39;)">8</a><a href="javascript: IDPageLoad(8, &#39;previous&#39;)">9</a><a href="javascript: IDPageLoad(9, &#39;previous&#39;)">10</a><span class="idc-divider">...</span><a href="javascript: IDPageLoad(13, &#39;previous&#39;)">14</a><a href="javascript: IDPageLoad(1, &#39;previous&#39;)">Next »</a><span class="idc-clear"></span></div></div>	<div id="IDCommentsNewThreadCover" class="idc-new"> <a name="respond"></a> <h3>Post a new comment</h3> <div class="idc-thread" id="IDCThread"> <div style="width: 100%;" id="IDCommentsNewThread" class="idc-c idc-reply idc-anonymous idc-signup"> <div class="idc-c-h" id="IDCommentsNewThreadHeader" style="display: none;"> <div class="idc-right" id="IDCommentsNewThreadHeaderRight"> <div class="idc-expand"></div> </div> </div> <ul class="idc-c-plugins" id="idc-plugin-buttons-new-thread"></ul> <div class="idc-c-t"> <form id="IDCommentNewThreadForm1"> <div class="idc-c-t-inner"> <textarea class="idc-text_noresize" style="color:#CCC" id="IDCommentNewThreadText" onfocus="txtOnFocus(this, &#39;Enter text right here!&#39;);" onblur="txtOnBlur(this, &#39;Enter text right here!&#39;);">Enter text right here!</textarea> <span class="idc-clear"> </span></div> </form> </div> <div class="idc-postnav" id="IDCPostNav"> <p id="IDCNavGuest2" style="display: inline;" class="idc-postnav-label"><span>Comment as a Guest, or login:</span></p> <ul class="idc-postnav-list" id="IDCNavList"> <li class="idc-first"><a href="javascript: showLogin();" class="idc-loginbtn_intensedebate">Login to IntenseDebate</a></li> <li class="idc-first"><a href="javascript: showWPLogin();" class="idc-loginbtn_wordpress">Login to WordPress.com</a></li> <li><a href="javascript: IDC.twitter.load_popup();" class="idc-loginbtn_twitter">Login to Twitter</a></li> </ul> <a href="javascript: IDCNavReply(&#39;IDCNavGuest&#39;); showSignupNewThread(); id_fbStopPoll(); id_show_nav();" id="IDCNavGuest" style="display:none;margin:2px 0;line-height:21px;">Go back</a> </div> <div class="idc-c-m idc-twitter_loggedin"> <div class="idc-userbar"> <p class="idc-right"><label for="IDNewThreadTweetThis-tw" style="display:inline; line-height:28px;" class="idc-nofloat"><input type="checkbox" id="IDNewThreadTweetThis-tw"> Tweet this comment</label></p> <a class="idc-a_nomenu"><img id="id_twAvatar_NewThread" src="http://www.bfxr.net/" class="idc-avatar" width="26" height="26"><img id="id_twAvatar_NewThread-fav" src="./Bfxr. Make sound effects for your games._files/twitter-favicon.ico" style="margin: 13px 0 -1px -5px; width: 16px; height: 16px;" width="16" height="16" alt="Twitter"></a> <p class="idc-userbar-i"> Connected as <a href="http://www.bfxr.net/#" id="id_twName_NewThread" class="snap_noshots"></a> (<a href="https://www.intensedebate.com/twitter-logout.php" class="snap_noshots">Logout</a>) </p> </div> <div class="idc-column-wide"> <label for="txtEmailNewThreadTW">Email (optional)</label> <input type="text" id="txtEmailNewThreadTW" class="idc-text" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);"> <p></p> <p class="idc-form-info">Not displayed publicly.</p> </div> </div> <div class="idc-c-m idc-signup"> <form id="IDCommentNewThreadForm2"> <div style="width: 100%;"> <div class="idc-columns"> <div class="idc-column" id="IDCColumnNameLabel"> <label for="txtNameNewThread">Name</label> </div> <div class="idc-column" id="IDCColumnEmailLabel"> <label for="txtEmailNewThread">Email</label> </div> <div class="idc-column" id="IDCColumnURLLabel"> <label for="txtURLNewThread">Website (optional)</label> </div> <span class="idc-clear"></span> </div> <div class="idc-column" id="IDCColumnName"> <input type="text" id="txtNameNewThread" class="idc-text" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);"> <p class="idc-form-info">Displayed next to your comments.</p> </div> <div class="idc-column" id="IDCColumnEmailReply"> <input type="text" id="txtEmailNewThread" class="idc-text" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);"> <p class="idc-form-info">Not displayed publicly.</p> </div> <div class="idc-column" id="IDCColumnURL"> <input type="text" class="idc-text" id="txtURLNewThread" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);"> <p class="idc-form-info">If you have a website, link to it here.</p> </div> </div> </form> </div> <p id="IDCommentsNewThreadListItem1" style="display:none;">Posting anonymously.</p> <p id="IDNewThreadTweetThisWrapper" style="display:none"><label for="IDNewThreadTweetThis" class="idc-nofloat"><input type="checkbox" id="IDNewThreadTweetThis"> Tweet this comment</label></p> <div class="idc-c-b"> <div class="idc-right" id="IDNewThreadSubmitLI"> <a class="idc-btn_l" href="javascript: postComment(0);"><span></span><span class="idc-r"><strong>Submit Comment</strong></span></a> </div> <div class="idc-new_subscribe" id="IDSubscribeToThisWrapper"> <!--<input type="checkbox" id="IDSubscribeToThis" class="idc-chk" />--> <label for="IDSubscribeToThis" class="idc-nofloat"> Subscribe to <select id="IDSubscribeToThis" name="IDSubscribeToThis"> <option value="-1" id="IDSubscribeToThis-def">None</option> <option value="1" id="IDSubscribeToThis-replies">Replies</option> <option value="0">All new comments</option> </select> </label> </div> <div class="idc-customtext"> <span id="customText"></span> </div> <span class="idc-clear"></span> </div> </div> </div> </div> <div class="idc-foot"> <p class="idc-id"><span>Comments by </span><a href="https://www.intensedebate.com/" class="idc-idlogo" target="_blank">IntenseDebate</a></p> <span class="idc-clear"></span> </div><div id="divReplyExpandingText" class="idc-measure"></div><div id="divNewPostExpandingText" class="idc-measure"></div><div class="idc-c idc-reply idc-anonymous idc-signup" id="IDCommentReplyDiv" style="display: none;"><p class="idc-header" id="IDCommentReplyName"></p> <ul class="idc-c-plugins" id="idc-plugin-buttons-reply"></ul> <div class="idc-c-t"> <div class="idc-c-t-inner"> <form id="IDCommentReplyForm1"> <textarea id="txtComment" class="idc-text_noresize" onfocus="txtOnFocus(this, &#39;Enter text right here!&#39;);" onblur="txtOnBlur(this, &#39;Enter text right here!&#39;);">Enter text right here!</textarea> </form> <span class="idc-clear"> </span></div> </div> <div class="idc-postnav" id="IDCPostNavReply"> <p id="IDCNavGuestReply2" style="display: inline;" class="idc-postnav-label"><span>Reply as a Guest, or login:</span></p> <ul class="idc-postnav-list" id="IDCNavListReply"> <li class="idc-first"><a href="javascript: showLogin();" class="idc-loginbtn_intensedebate">Login to IntenseDebate</a></li> <li class="idc-first"><a href="javascript: showWPLogin();" class="idc-loginbtn_wordpress">Login to WordPress.com</a></li> <li><a href="javascript: IDC.twitter.load_popup();" class="idc-loginbtn_twitter">Login to Twitter</a></li> </ul> <a href="javascript: IDCNavReply(&#39;IDCNavGuestReply&#39;); showSignupReply(); id_fbStopPoll(); id_show_nav();" id="IDCNavGuestReply" style="display:none;margin:2px 0;line-height:21px;">Go back</a> </div> <div class="idc-c-m idc-twitter_loggedin"> <div class="idc-userbar"> <p class="idc-right"><label for="IDReplyTweetThis-tw" style="display:inline; line-height: 28px;" class="idc-nofloat"><input type="checkbox" id="IDReplyTweetThis-tw"> Tweet this comment</label></p> <a class="idc-a_nomenu"><img id="id_twAvatar_Reply" src="http://www.bfxr.net/" class="idc-avatar" width="26" height="26"><img id="id_twAvatar_Reply-fav" src="./Bfxr. Make sound effects for your games._files/twitter-favicon.ico" style="margin: 13px 0 -1px -5px; width: 16px; height: 16px;" width="16" height="16" alt="Twitter"></a> <p class="idc-userbar-i">Connected as <a href="http://www.bfxr.net/#" class="snap_noshots" id="id_twName_Reply"></a> (<a href="https://www.intensedebate.com/twitter-logout.php" class="snap_noshots">Logout</a>)</p> </div> <div class="idc-column-wide"> <label for="txtEmailReplyTW">Email (optional)</label> <input type="text" id="txtEmailReplyTW" class="idc-text" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);"> <p class="idc-form-info">Not displayed publicly.</p> </div> </div> <div class="idc-c-m idc-signup" id="IDCommentReplyOuterDiv"> <form id="IDCommentReplyForm2"> <div style="width: 100%;" id="IDCommentReplyInnerDiv"> <div class="idc-columns"> <div class="idc-column" id="IDCColumnNameReplyLabel"> <label for="txtNameReply">Name</label> </div> <div class="idc-column" id="IDCColumnEmailReplyLabel"> <label for="txtEmailReply">Email</label> </div> <div class="idc-column" id="IDCColumnURLReplyLabel"> <label for="txtURLReply">Website (optional)</label> </div> <span class="idc-clear"></span> </div> <div class="idc-column" id="IDCColumnNameReply"> <input type="text" id="txtNameReply" class="idc-text" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);"> <p class="idc-form-info">Displayed next to your comments.</p> </div> <div class="idc-column" id="IDCColumnEmailReply"> <input type="text" id="txtEmailReply" class="idc-text" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);"> <p class="idc-form-info">Not displayed publicly.</p> </div> <div class="idc-column" id="IDCColumnURLReply"> <input type="text" class="idc-text" id="txtURLReply" onfocus="txtOnFocus(this, &#39;&#39;);" onblur="txtOnBlur(this, &#39;&#39;);"> <p class="idc-form-info">If you have a website, link to it here.</p> </div> </div> </form> </div> <p id="IDCommentReplyListItem1" style="display:none;">Posting anonymously.</p> <p id="IDReplyTweetThisWrapper" style="display:none"><label for="IDReplyTweetThis" class="idc-nofloat"><input type="checkbox" id="IDReplyTweetThis"> Tweet this comment</label></p> <div class="idc-c-b"> <div class="idc-right" id="IDReplyDivSubmitLI"> <a href="javascript: hideReply();" class="idc-btn_l-secondary"><span></span><span class="idc-r">Cancel</span></a> <a id="IDReplyDivSubmitLIButton" class="idc-btn_l" href="javascript: postComment(1);"><span></span><span class="idc-r"><strong>Submit Comment</strong></span></a> </div> <div class="idc-new_subscribe" id="IDSubscribeToThisWrapperReply"> <!--<input type="checkbox" id="IDSubscribeToThisReply" class="idc-chk" />--> <label for="IDSubscribeToThisReply" class="idc-nofloat"> Subscribe to <select id="IDSubscribeToThisReply" name="IDSubscribeToThisReply"> <option value="-1" id="IDSubscribeToThisReply-def">None</option> <option value="1" id="IDSubscribeToThisReply-replies">Replies</option> <option value="0">All new comments</option> </select> </label> </div> <span class="idc-clear"></span> </div></div><iframe src="./Bfxr. Make sound effects for your games._files/empty.html" style="display: none;"></iframe><img src="./Bfxr. Make sound effects for your games._files/remoteCheckin.php" style="display: none;"></div><span id="idc-clear"></span></div><script type="text/javascript" src="./Bfxr. Make sound effects for your games._files/441830655"></script><script type="text/javascript" src="./Bfxr. Make sound effects for your games._files/genericCommentWrapperV2.js.download"></script>
+
+
+
+  </div>
+</div>
+	    
+<script type="text/javascript">
+
+/* Since we specified manualStartup=true, tabber will not run after
+   the onload event. Instead let's run it now, to prevent any delay
+   while images load.
+*/
+
+tabberAutomatic(tabberOptions);
+
+</script>
+<p>
+</p><center>
+	    <a href="mailto:analytic@gmail.com">analytic@gmail.com</a> | <a href="http://www.increpare.com/">increpare.com</a> | <a href="http://www.increpare.com/2010/08/donating/">donate</a>
+	</center>    	
+	<p>
+   
+
+</p><div class="idc-loaded" id="IDCommentLoadingDiv" style="display: block;"></div></body></html>
