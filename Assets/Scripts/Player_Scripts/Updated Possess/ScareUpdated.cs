@@ -18,10 +18,9 @@ public class ScareUpdated : MonoBehaviour {
 		
 	}
 
-    public void Sphere_Scare ()
+    public void tomb_scare ()
     {
-        myanimation.Play("Test", -1);
-        Debug.Log("You scared!!!!!!!!");
+        myanimation.Play("Tomb scare", -1);
     }
 
     public void wall_scare ()

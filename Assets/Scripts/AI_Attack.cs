@@ -35,7 +35,7 @@ public class AI_Attack : MonoBehaviour {
 				attackTimer = 1;
 			}
 
-			GameObject.FindObjectOfType<HealthSystem> ().HeartUI.sprite = sprites [(int)GameObject.FindGameObjectWithTag ("Player").GetComponent<Player> ().curHealth];
+			//GameObject.FindObjectOfType<HealthSystem> ().HeartUI.sprite = sprites [(int)GameObject.FindGameObjectWithTag ("Player").GetComponent<Player> ().curHealth];
 		}
 	}
 

@@ -12,10 +12,12 @@ public class MenuScript : MonoBehaviour {
     public Button exitText;
     public Button optionsText;
 
+	public AudioSource audio_source;
+	public AudioClip audio_clip; 
 
 	// Use this for initialization
 	void Start () 
-    {
+	{	
 		startMenu =GetComponent<Canvas>();
         quitMenu = quitMenu.GetComponent<Canvas>();
         optionsMenu = optionsMenu.GetComponent<Canvas>();
@@ -28,17 +30,19 @@ public class MenuScript : MonoBehaviour {
 	
     public void OptionsPress()
     {
+		audio_source.PlayOneShot (audio_clip, 1);
+
         quitMenu.enabled = false;
         startText.enabled = false;
         exitText.enabled = false;
         optionsMenu.enabled = true;
 		optionsText.enabled = false;
-		startMenu.gameObject.SetActive(false);
+		startMenu.gameObject.SetActive(false);	
     }
 
     public void ExitPress()
     {
-
+		audio_source.PlayOneShot (audio_clip, 1);
         quitMenu.enabled = true;
         startText.enabled = false;
         exitText.enabled = false;
@@ -49,6 +53,8 @@ public class MenuScript : MonoBehaviour {
 
     public void NoPress()
     {
+		audio_source.PlayOneShot (audio_clip, 1);
+
         quitMenu.enabled = false;
         startText.enabled = true;
         exitText.enabled = true;
@@ -59,12 +65,15 @@ public class MenuScript : MonoBehaviour {
     }
 
     public void StartLevel()
-    {
-        SceneManager.LoadScene("DEMO");
+	{	
+		audio_source.PlayOneShot (audio_clip, 1);
+
+		SceneManager.LoadScene("DEMO");
     }
 
     public void ExitGame()
     {
+		audio_source.PlayOneShot (audio_clip, 1);
         Application.Quit();
     }
 

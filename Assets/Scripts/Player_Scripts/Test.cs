@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Test : MonoBehaviour { 
 	//Scale sizes & speeds
 	public int startSize = 1;
 	public int minSize = 1;
 	public int maxSize = 300;
-	public float speed = 4.0f;
+	public float speed = 3.0f;
 	public GameObject Cube;
 	//Timer
-	public float delay = 10.0f;
+	public float delay = 3.0f;
 	//TOggle
 	public bool movementToggle = true;
 
@@ -23,6 +24,7 @@ public class Test : MonoBehaviour {
 	private Vector3 baseScale;
 	private int currScale;
 	private Vector3 moveDirection = Vector3.zero;
+
 
 	void Start() {
 		baseScale = transform.localScale;
@@ -50,8 +52,10 @@ public class Test : MonoBehaviour {
 			next = Time.time + delay;
             movementToggle = !movementToggle;
 
-            BoxCollider boxCollider = (BoxCollider)GetComponent(typeof(BoxCollider));
-            boxCollider.size = new Vector3(100f, 100f, 100f);
+			CapsuleCollider capsule_collider = (CapsuleCollider)GetComponent(typeof(CapsuleCollider));
+			capsule_collider.radius = 5.0f;
+			capsule_collider.height = 4.0f;
+
 			
             act = true;
 			Debug.Log("agro");
@@ -63,8 +67,9 @@ public class Test : MonoBehaviour {
 			ChangeSize (false);
 			movementToggle = !movementToggle;
           
-            BoxCollider boxCollider = (BoxCollider)GetComponent(typeof(BoxCollider));
-            boxCollider.size = new Vector3(1f, 1f, 1f);
+			CapsuleCollider capsule_collider_two = (CapsuleCollider)GetComponent(typeof(CapsuleCollider));
+			capsule_collider_two.radius = 0.5f;
+			capsule_collider_two.height = 1.0f;
 			
             Debug.Log("Calm");
 		}

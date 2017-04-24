@@ -47,28 +47,25 @@ public class PossessUpdated : MonoBehaviour {
             if (currentPossessable.CompareTag("mummy"))
             {
                 Debug.Log("this is a mummy");
-                currentPossessable.GetComponent<Scare_Two>().hiero_scare();
-                //Scare_Two scarer;
-                //scarer = col.gameObject.GetComponent<Scare_Two>();
-                //scarer.hiero_scare();
+				Debug.Log(currentPossessable.name);
+				currentPossessable.GetComponent<ScareUpdated>().hiero_scare();
 
             }
-            if (currentPossessable.CompareTag("wall"))
+			if (currentPossessable.CompareTag("wall"))
             {
                 Debug.Log("this is a wall");
-                currentPossessable.GetComponent<Scare_Two>().wall_scare();
-                //Scare_Two scarer;
-                //scarer = col.gameObject.GetComponent<Scare_Two>();
-                //scarer.wall_scare();
+				Debug.Log(currentPossessable.name);
+				currentPossessable.GetComponent<ScareUpdated>().wall_scare();
+
             }
-            if (currentPossessable.CompareTag("tag"))
+            if (currentPossessable.CompareTag("Tomb"))
             {
-                Debug.Log("this is a sphere");
+                Debug.Log("this is a Tomb");
                 Debug.Log(currentPossessable.name);
 
                 if (Input.GetKeyDown("q") && closeTo)
                 {
-                    currentPossessable.GetComponent<Scare_Two>().Sphere_Scare();
+					currentPossessable.GetComponent<ScareUpdated>().tomb_scare();
                     //Debug.Log("You scared!!!!!!!!");
                     //Scare_Two scarer;
                     //scarer = col.gameObject.GetComponent<Scare_Two>();
@@ -80,7 +77,8 @@ public class PossessUpdated : MonoBehaviour {
 
     void OnTriggerStay(Collider col)
     {
-		if (col.gameObject.CompareTag("mummy") || col.gameObject.CompareTag("wall") || col.gameObject.CompareTag("tag"))// if a gameobject collides with an object called "trigger" it will satisfy conditions of if statement.
+		
+		if (col.gameObject.CompareTag("mummy") || col.gameObject.CompareTag("tag")  || col.gameObject.CompareTag("Tomb")|| col.gameObject.CompareTag("wall"))// if a gameobject collides with an object called "trigger" it will satisfy conditions of if statement.
         {
             currentPossessable = col.gameObject;
 
@@ -88,43 +86,8 @@ public class PossessUpdated : MonoBehaviour {
             Debug.Log("you are in");
             Debug.Log(closeTo);
 
-            /*
-            if (currentPossessable.CompareTag("mummy"))
-            {
-                Debug.Log("this is a mummy");
-                currentPossessable.GetComponent<Scare_Two>().hiero_scare();
-                //Scare_Two scarer;
-                //scarer = col.gameObject.GetComponent<Scare_Two>();
-                //scarer.hiero_scare();
-
-            }
-            if (currentPossessable.CompareTag("wall"))
-            {
-                Debug.Log("this is a wall");
-                currentPossessable.GetComponent<Scare_Two>().wall_scare();
-                //Scare_Two scarer;
-                //scarer = col.gameObject.GetComponent<Scare_Two>();
-                //scarer.wall_scare();
-            }
-            if (currentPossessable.CompareTag("tag"))
-            {
-                Debug.Log("this is a sphere");
-                Debug.Log(currentPossessable.name);
-
-                if (Input.GetKeyDown("q") && closeTo )
-                {
-                    currentPossessable.GetComponent<Scare_Two>().Sphere_Scare();
-                    //Debug.Log("You scared!!!!!!!!");
-                    //Scare_Two scarer;
-                    //scarer = col.gameObject.GetComponent<Scare_Two>();
-                    //scarer.Sphere_Scare();
-                }
-            }//Req
-            */
-
-            // Destroy(col.gameObject); // does something! 
-
         }
+
     }
 
     void OnTriggerExit(Collider col)
