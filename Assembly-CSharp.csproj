@@ -635,6 +635,8 @@
      <Compile Include="Assets\Scripts\Player_Scripts\Scare.cs" />
      <Compile Include="Assets\Scripts\Player_Scripts\Scare_Two.cs" />
      <Compile Include="Assets\Scripts\Player_Scripts\Test.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\Updated Possess\PossessUpdated.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\Updated Possess\ScareUpdated.cs" />
      <Compile Include="Assets\Scripts\Player_Scripts\rage_script.cs" />
      <Compile Include="Assets\Scripts\Trigger\TriggerEvent.cs" />
      <Compile Include="Assets\Scripts\UI\GameOver\GameOverScript.cs" />
