@@ -3,7 +3,10 @@ using System.Collections;
 
 
 public class Test : MonoBehaviour { 
-	//Scale sizes & speeds
+	
+    public AudioSource enraged;
+    public AudioSource rageLost;
+    //Scale sizes & speeds
 	public int startSize = 1;
 	public int minSize = 1;
 	public int maxSize = 300;
@@ -51,7 +54,7 @@ public class Test : MonoBehaviour {
 			//Cube.GetComponent<Movement> ().LaunchRage ();
 			next = Time.time + delay;
             movementToggle = !movementToggle;
-
+            enraged.Play();
 			CapsuleCollider capsule_collider = (CapsuleCollider)GetComponent(typeof(CapsuleCollider));
 			capsule_collider.radius = 5.0f;
 			capsule_collider.height = 4.0f;
@@ -66,7 +69,7 @@ public class Test : MonoBehaviour {
 			act = false;
 			ChangeSize (false);
 			movementToggle = !movementToggle;
-          
+            rageLost.Play();
 			CapsuleCollider capsule_collider_two = (CapsuleCollider)GetComponent(typeof(CapsuleCollider));
 			capsule_collider_two.radius = 0.5f;
 			capsule_collider_two.height = 1.0f;
