@@ -10,7 +10,7 @@ public class Test : MonoBehaviour {
 	public int startSize = 1;
 	public int minSize = 1;
 	public int maxSize = 300;
-	public float speed = 3.0f;
+	public float speed = 1.0f;
 	public GameObject Cube;
 	//Timer
 	public float delay = 3.0f;
@@ -18,7 +18,7 @@ public class Test : MonoBehaviour {
 	public bool movementToggle = true;
 
 	//Script components
-	public Movement movement; 
+	public Movement movement;
 
 	private float next;
 	private bool act = false;
