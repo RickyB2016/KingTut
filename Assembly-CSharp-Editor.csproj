@@ -56,6 +56,9 @@
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\Behavior Designer\Editor\GridShader.shader" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>E:/Software/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>E:/Software/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -97,6 +100,9 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>E:/Software/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>E:/Software/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.VR">
  <HintPath>E:/Software/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
