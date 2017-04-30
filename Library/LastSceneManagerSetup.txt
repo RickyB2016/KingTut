@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/shaun level revised.unity
+- path: Assets/Scenes/TutorialLevel.unity
   isLoaded: 1
   isActive: 1
