@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 public class AI_Attack : MonoBehaviour {
 
 	private Sprite[] sprites;
-	public AI_Attack ai_attack;
 	private float attackTimer;
+
+	private GameObject player_gameobject;
+	private	Player player_script;
 
 	void Start()
 	{
+		player_gameobject = GameObject.Find ("CharacterHolder");
+		player_script = player_gameobject.gameObject.GetComponent<Player> ();
+
 		int count = 0;
 		sprites = new Sprite[7];
 		sprites [count++] = Resources.Load("Sprites/heartsprite_0") as Sprite;
@@ -25,13 +30,12 @@ public class AI_Attack : MonoBehaviour {
 
 	private void OnTriggerStay(Collider col)
 	{
-		if (attackTimer <= 0){
-			
-			if (col.tag == "Player") {
-				GameObject.FindObjectOfType<Player> ().curHealth -= 1;
-				if (GameObject.FindObjectOfType<Player> ().curHealth <= 0) {
-					SceneManager.LoadScene ("Main Menu");
-				}
+		if (attackTimer <= 0)
+		{			
+			if (col.tag == "Player") 
+			{
+				player_script.Health_Decrease ();
+
 				attackTimer = 1;
 			}
 

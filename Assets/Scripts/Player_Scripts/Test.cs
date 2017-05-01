@@ -28,6 +28,9 @@ public class Test : MonoBehaviour {
 	private int currScale;
 	private Vector3 moveDirection = Vector3.zero;
 
+	// Rage Enemy Disable
+	public Player player_script;
+
 
 	void Start() {
 		baseScale = transform.localScale;
@@ -35,8 +38,6 @@ public class Test : MonoBehaviour {
 		currScale = startSize;
 		targetScale = baseScale * startSize;
 		movement = GetComponent<Movement> ();
-
-
 	}
 
 	void Update() {
@@ -57,12 +58,12 @@ public class Test : MonoBehaviour {
             enraged.Play();
 			CapsuleCollider capsule_collider = (CapsuleCollider)GetComponent(typeof(CapsuleCollider));
 			capsule_collider.radius = 5.0f;
-			capsule_collider.height = 4.0f;
-
-			
+			capsule_collider.height = 4.0f;			
             act = true;
 			Debug.Log("agro");
 			ChangeSize (true);
+
+			player_script.Health_Off ();
 		}
 		if (next < Time.time && act) {
 
@@ -72,9 +73,10 @@ public class Test : MonoBehaviour {
             rageLost.Play();
 			CapsuleCollider capsule_collider_two = (CapsuleCollider)GetComponent(typeof(CapsuleCollider));
 			capsule_collider_two.radius = 0.5f;
-			capsule_collider_two.height = 1.0f;
-			
+			capsule_collider_two.height = 1.0f;			
             Debug.Log("Calm");
+
+			player_script.Health_On ();
 		}
 	}
 
