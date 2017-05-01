@@ -651,6 +651,8 @@
      <Compile Include="Assets\Scripts\UI\Menus\UI\Pause Menu PreScript\PauseScripts.cs" />
      <Compile Include="Assets\Scripts\UI\Menus\inputAnyKey.cs" />
      <Compile Include="Assets\Scripts\UI\PressAnyKey.cs" />
+     <Compile Include="Assets\WinCondition.cs" />
+     <Compile Include="Assets\WinCondition2.cs" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\IgnoreTheseFiles\Standard_Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

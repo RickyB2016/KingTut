@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PressAnyKey : MonoBehaviour {
 
+	public AudioSource audio_source;
+	public AudioClip audio_clip; 
 	// Use this for initialization
 	void Start () {
 		
@@ -20,8 +22,10 @@ public class PressAnyKey : MonoBehaviour {
 
         if (Input.anyKey)
         {
+			audio_source.PlayOneShot (audio_clip, 1);
             Debug.Log("You pressed any key");
             PressedKey();
+
         }
 		
 	}

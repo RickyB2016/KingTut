@@ -86,6 +86,7 @@ public class MenuScript : MonoBehaviour {
    
     public void ExitGame()
     {
+		
 		audio_source.PlayOneShot (audio_clip, 1);
         Application.Quit();
     }
@@ -94,19 +95,19 @@ public class MenuScript : MonoBehaviour {
     {   
         audio_source.PlayOneShot (audio_clip, 1);
 
-       // SceneManager.LoadScene("DEMO");
+       SceneManager.LoadScene("TutorialLevel");
     }
 
     public void StartLevelOne()
     {   
         audio_source.PlayOneShot (audio_clip, 1);
 
-      // SceneManager.LoadScene("DEMO");
+		SceneManager.LoadScene("Level One Take 3");
     }
     public void StartLevelTwo()
     {   
         audio_source.PlayOneShot (audio_clip, 1);
 
-       // SceneManager.LoadScene("DEMO");
+		SceneManager.LoadScene("shaun level revised");
     }
 }
