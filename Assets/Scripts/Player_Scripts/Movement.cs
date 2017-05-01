@@ -6,6 +6,8 @@ public class Movement : MonoBehaviour {
 	public float jumpSpeed = 20.0F;
 	public float gravity = 20.0F;
 	private Vector3 moveDirection = Vector3.zero;
+	public GameObject tutAnimation; 
+
 
 	public void LaunchRage()
 	{
@@ -19,11 +21,18 @@ public class Movement : MonoBehaviour {
 			moveDirection = transform.TransformDirection(moveDirection);
 			moveDirection *= speed;
 			//if (Input.GetButton("Jump"))
-				//moveDirection.y = jumpSpeed;
-
+			//moveDirection.y = jumpSpeed;
+			if (Input.GetKeyDown(KeyCode.W))
+				tutAnimation.transform.forward = new Vector3(0f, 0f, 1f);
+			else if (Input.GetKeyDown(KeyCode.S))
+				tutAnimation.transform.forward = new Vector3(0f, 0f, -1f);
+			else if (Input.GetKeyDown(KeyCode.D))
+				tutAnimation.transform.forward = new Vector3(1f, 0f, 0f);
+			else if (Input.GetKeyDown(KeyCode.A))
+				tutAnimation.transform.forward = new Vector3(-1f, 0f, 0f);
 		}
 		moveDirection.y -= gravity * Time.deltaTime;
 		controller.Move(moveDirection * Time.deltaTime);
 	}
-   
+
 }

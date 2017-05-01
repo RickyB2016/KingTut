@@ -4,32 +4,47 @@ using UnityEngine;
 
 public class ScareUpdated : MonoBehaviour {
 
-    private Animator myanimation;
+	public Animation myanimation;
+
+	private bool used = false;
 
 	// Use this for initialization
 	void Start ()
-    {
-        myanimation = gameObject.GetComponent<Animator>();
+	{
+
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
-    {
-		
+	{
+
 	}
 
-    public void tomb_scare ()
-    {
-        myanimation.Play("Tomb scare", -1);
-    }
+	public void tomb_scare ()
+	{
+		if(!used)
+		{
+			myanimation.Play();
+			used = true;
+		}
+	}
 
-    public void wall_scare ()
-    {
-        myanimation.Play("Wall", -1);
-    }
+	public void wall_scare ()
+	{
+		if (!used)
+		{		
+			myanimation.Play();
+			used = true;
+		}
+	}
 
-    public void hiero_scare ()
-    {
-        //myanimation.Play("", );
-    }
+	public void hiero_scare ()
+	{
+		if (!used)
+		{
+			myanimation.Play();
+			used = true;
+		}
+
+	}
 }
