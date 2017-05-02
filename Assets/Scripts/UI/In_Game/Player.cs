@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
 		if (curHealth <= 0) 
 		{
 			Die ();
-			SceneManager.LoadScene ("Main Menu");
+			SceneManager.LoadScene ("GameOver");
 
 		}
 	}
