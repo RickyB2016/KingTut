@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
 		if (curHealth <= 0) 
 		{
 			Die ();
-			SceneManager.LoadScene ("GameOver");
+			SceneManager.LoadScene ("Main Menu");
 
 		}
 	}
@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
 	void Die()
 	{
 		GameOver.enabled = true;
+		SceneManager.LoadScene ("Main Menu");
 	}
 
 	public void Health_Off ()

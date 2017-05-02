@@ -31,6 +31,8 @@ public class Test : MonoBehaviour {
 	// Rage Enemy Disable
 	public Player player_script;
 
+	// Rage Particle Effect
+	public GameObject particle;
 
 	void Start() {
 		baseScale = transform.localScale;
@@ -56,6 +58,9 @@ public class Test : MonoBehaviour {
 			next = Time.time + delay;
             movementToggle = !movementToggle;
             enraged.Play();
+
+			particle.gameObject.SetActive (true);
+
 			CapsuleCollider capsule_collider = (CapsuleCollider)GetComponent(typeof(CapsuleCollider));
 			capsule_collider.radius = 5.0f;
 			capsule_collider.height = 4.0f;			
@@ -71,6 +76,9 @@ public class Test : MonoBehaviour {
 			ChangeSize (false);
 			movementToggle = !movementToggle;
             rageLost.Play();
+
+			particle.gameObject.SetActive (false);
+
 			CapsuleCollider capsule_collider_two = (CapsuleCollider)GetComponent(typeof(CapsuleCollider));
 			capsule_collider_two.radius = 0.5f;
 			capsule_collider_two.height = 1.0f;			
