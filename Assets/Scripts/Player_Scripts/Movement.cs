@@ -22,13 +22,13 @@ public class Movement : MonoBehaviour {
 			moveDirection *= speed;
 			//if (Input.GetButton("Jump"))
 			//moveDirection.y = jumpSpeed;
-			if (Input.GetKeyDown(KeyCode.W))
+			if (Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown(KeyCode.UpArrow))
 				tutAnimation.transform.forward = new Vector3(0f, 0f, 1f);
-			else if (Input.GetKeyDown(KeyCode.S))
+			else if (Input.GetKeyDown(KeyCode.S)||Input.GetKeyDown(KeyCode.DownArrow))
 				tutAnimation.transform.forward = new Vector3(0f, 0f, -1f);
-			else if (Input.GetKeyDown(KeyCode.D))
+			else if (Input.GetKeyDown(KeyCode.D)||Input.GetKeyDown(KeyCode.RightArrow))
 				tutAnimation.transform.forward = new Vector3(1f, 0f, 0f);
-			else if (Input.GetKeyDown(KeyCode.A))
+			else if (Input.GetKeyDown(KeyCode.A)||Input.GetKeyDown(KeyCode.LeftArrow))
 				tutAnimation.transform.forward = new Vector3(-1f, 0f, 0f);
 		}
 		moveDirection.y -= gravity * Time.deltaTime;
