@@ -7,8 +7,10 @@ public class PossessUpdated : MonoBehaviour {
 	private bool closeTo = false;
 	bool rendToggle = false;
 	bool movementToggle = true;
+    bool possessToggle = false; 
 	Renderer rend;
 	Movement movement;
+
 
 	public GameObject bobbing;
 	public bool bobbing_active = true;
@@ -37,7 +39,7 @@ public class PossessUpdated : MonoBehaviour {
 		rend.enabled = !rendToggle;
 		movement.enabled = movementToggle;
 
-		if (Input.GetKeyDown ("e") && closeTo) 
+		/*if (Input.GetKeyDown ("e") && closeTo) 
 		{   
 			rendToggle = !rendToggle;
 			movementToggle = !movementToggle;
@@ -50,7 +52,7 @@ public class PossessUpdated : MonoBehaviour {
 
 			print ("You pressed E ");
 
-		}
+		}**/
 	}
 
 	void LateUpdate ()
@@ -66,24 +68,31 @@ public class PossessUpdated : MonoBehaviour {
 			}
 			if (currentPossessable.CompareTag("wall"))
 			{
-				Debug.Log("this is a wall");
-				Debug.Log(currentPossessable.name);
-				currentPossessable.GetComponent<ScareUpdated>().wall_scare();
+				if (Input.GetKeyDown ("e") && closeTo) 
+                {   
 
+                    rendToggle = !rendToggle;
+                    movementToggle = !movementToggle;
+                    bobbing_active = !bobbing_active;
+                    Debug.Log("You pressed E inside me");
+                    currentPossessable.GetComponent<animControllerTwo>().enabled =!currentPossessable.GetComponent<animControllerTwo>().enabled;
+                    print ("You pressed E ");
+                }
 			}
 			if (currentPossessable.CompareTag("Tomb"))
 			{
-				//Debug.Log("this is a Tomb");
-				//Debug.Log(currentPossessable.name);
-
-				if (Input.GetKeyDown("q") && closeTo)
-				{
-					currentPossessable.GetComponent<ScareUpdated>().tomb_scare();
-					//Debug.Log("You scared!!!!!!!!");
-					//Scare_Two scarer;
-					//scarer = col.gameObject.GetComponent<Scare_Two>();
-					//scarer.Sphere_Scare();
-				}
+			
+                if (Input.GetKeyDown ("e") && closeTo) 
+                {   
+                    
+                    rendToggle = !rendToggle;
+                    movementToggle = !movementToggle;
+                    bobbing_active = !bobbing_active;
+                    Debug.Log("You pressed E inside me");
+                    currentPossessable.GetComponent<animController>().enabled =!currentPossessable.GetComponent<animController>().enabled;
+                    print ("You pressed E ");
+                 }
+				
 			}
 		}
 	}
@@ -96,6 +105,7 @@ public class PossessUpdated : MonoBehaviour {
 			currentPossessable = col.gameObject;
 
 			closeTo = true;
+
 			//Debug.Log("you are in");
 			//Debug.Log(closeTo);
 
