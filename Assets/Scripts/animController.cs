@@ -5,7 +5,7 @@ using UnityEngine;
 public class animController : MonoBehaviour {
 
     public Animator anim;
-
+    private AI_Scared aiScared;
 
 	// Use this for initialization
 	void Start () {
@@ -18,8 +18,18 @@ public class animController : MonoBehaviour {
 
         if (Input.GetKeyDown("q"))
         {
+            Debug.Log("animation played");
             anim.Play("tombAnimation");
         }
 		
 	}
+    void OnTriggerEnter(Collider col)
+    {
+       if (col.gameObject.name == "Cube")// if a gameobject collides with an object called "trigger" it will satisfy conditions of if statement.
+        {            
+            Debug.Log("You collided with enemy");
+            aiScared.ScaredAI();
+        }
+
+    }
 }

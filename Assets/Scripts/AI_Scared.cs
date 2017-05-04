@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AI_Scared : MonoBehaviour {
 
-
+    public AudioSource scaredSound;
 	public AI_Patrol ai_patrol;
 	public GameObject mygameobject;
 
@@ -14,8 +14,16 @@ public class AI_Scared : MonoBehaviour {
 		//Debug.Log ("Hello");
 		if (col.tag == "Player")
 		{
-			ai_patrol.enabled = false;
-			Destroy (mygameobject);
-		}
+			//ai_patrol.enabled = false;
+			//Destroy (mygameobject);
+            ScaredAI();
+        }
 	}
+
+    public void ScaredAI(){
+        scaredSound.Play();
+        ai_patrol.enabled = false;
+        Debug.Log("You killed me :O ");
+        Destroy (mygameobject);
+    }
 }

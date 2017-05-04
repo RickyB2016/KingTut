@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour {
 
@@ -12,7 +13,6 @@ public class MenuScript : MonoBehaviour {
     public Button startText;
     public Button exitText;
     public Button optionsText;
-
 
 	public AudioSource audio_source;
 	public AudioClip audio_clip; 
@@ -96,7 +96,8 @@ public class MenuScript : MonoBehaviour {
         audio_source.PlayOneShot (audio_clip, 1);
 
        SceneManager.LoadScene("TutorialLevel");
-    }
+
+     }
 
     public void StartLevelOne()
     {   
@@ -110,4 +111,5 @@ public class MenuScript : MonoBehaviour {
 
 		SceneManager.LoadScene("shaun level revised");
     }
+  
 }

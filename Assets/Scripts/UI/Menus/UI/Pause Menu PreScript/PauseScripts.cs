@@ -8,7 +8,8 @@ public class PauseScripts : MonoBehaviour {
     void Awake ()
     {
 
-        Toggle();
+       Toggle();
+      
 
     }
 
