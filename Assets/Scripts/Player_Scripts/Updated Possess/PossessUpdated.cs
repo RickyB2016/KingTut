@@ -10,6 +10,7 @@ public class PossessUpdated : MonoBehaviour {
     bool possessToggle = false; 
     Renderer rend;
     Movement movement;
+    public Player player_script;
 
 
     public GameObject bobbing;
@@ -76,7 +77,16 @@ public class PossessUpdated : MonoBehaviour {
                     bobbing_active = !bobbing_active;
                     Debug.Log("You pressed E inside me");
                     currentPossessable.GetComponent<animControllerTwo>().enabled =!currentPossessable.GetComponent<animControllerTwo>().enabled;
+                    if (currentPossessable.GetComponent<animControllerTwo>().enabled == true)
+                    {
+                        player_script.Health_Off ();
+                    }
+                    else
+                    {
+                        player_script.Health_On ();
+                    }
                     print ("You pressed E ");
+                   // player_script.Health_Off;
                 }
             }
             if (currentPossessable.CompareTag("Tomb"))
@@ -90,6 +100,18 @@ public class PossessUpdated : MonoBehaviour {
                     bobbing_active = !bobbing_active;
                     Debug.Log("You pressed E inside me");
                     currentPossessable.GetComponent<animController>().enabled =!currentPossessable.GetComponent<animController>().enabled;
+                    if (currentPossessable.GetComponent<animController>().enabled == false)
+                    {
+                        Debug.Log("health on");
+                        player_script.Health_On ();
+                    }
+                    else
+                    {
+                        Debug.Log("health off");
+                        player_script.Health_Off ();
+                    }
+                    print ("You pressed E ");
+                    // player_script.Health_Off;
                     print ("You pressed E ");
                 }
 

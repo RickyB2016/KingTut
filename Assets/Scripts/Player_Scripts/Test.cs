@@ -62,8 +62,8 @@ public class Test : MonoBehaviour {
 			particle.gameObject.SetActive (true);
 
 			CapsuleCollider capsule_collider = (CapsuleCollider)GetComponent(typeof(CapsuleCollider));
-			capsule_collider.radius = 5.0f;
-			capsule_collider.height = 4.0f;			
+			capsule_collider.radius = 2.0f;
+			capsule_collider.height = 3.0f;			
             act = true;
 			Debug.Log("agro");
 			ChangeSize (true);
