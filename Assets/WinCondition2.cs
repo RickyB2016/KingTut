@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinCondition : MonoBehaviour {
+public class WinCondition2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
