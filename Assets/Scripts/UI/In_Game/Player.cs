@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
 
 	private bool damage = true;
 
+	public AudioClip hurtSound;
+	public AudioSource audio;
+
 	void Start () 
 	{
 		curHealth = maxHealth;
@@ -54,6 +57,7 @@ public class Player : MonoBehaviour
 		if(damage)
 		{
 			curHealth -= 1;
+			audio.PlayOneShot (hurtSound, 0.9f);
 		}
 	}
 }
