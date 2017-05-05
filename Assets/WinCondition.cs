@@ -7,13 +7,17 @@ public class WinCondition : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 
 
 
 	void OnTriggerEnter(Collider other) {
-		SceneManager.LoadScene("Main Menu");
+
+		if(other.gameObject.CompareTag("Player"))
+		{
+			SceneManager.LoadScene("Main Menu");
+		}
 
 	}
 
@@ -22,6 +26,6 @@ public class WinCondition : MonoBehaviour {
 	void Update () {
 
 
-		
+
 	}
 }

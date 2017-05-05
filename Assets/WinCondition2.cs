@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinCondition2 : MonoBehaviour {
+public class WinCondition : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +13,11 @@ public class WinCondition2 : MonoBehaviour {
 
 
 	void OnTriggerEnter(Collider other) {
-		SceneManager.LoadScene("Main Menu");
+
+		if(other.gameObject.CompareTag("Player"))
+		{
+			SceneManager.LoadScene("Main Menu");
+		}
 
 	}
 
