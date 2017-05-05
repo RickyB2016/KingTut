@@ -9,6 +9,7 @@ public class AI_Scared : MonoBehaviour {
 	public GameObject mygameobject;
 
 
+
 	private void OnTriggerEnter(Collider col)
 	{
 		//Debug.Log ("Hello");

@@ -6,6 +6,7 @@ public class animControllerTwo : MonoBehaviour {
 
     public Animator anim;
     public AI_Scared aiScared;
+    private bool deathToggle = false; 
 
 
 
@@ -20,6 +21,7 @@ public class animControllerTwo : MonoBehaviour {
 
         if (Input.GetKeyDown("q"))
         {
+            deathToggle = true; 
             Debug.Log("Animation played?");
             anim.Play("wallAnimation");
         }
@@ -29,8 +31,9 @@ public class animControllerTwo : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
 
-        if (col.tag == "Enemy")// if a gameobject collides with an object called "trigger" it will satisfy conditions of if statement.
-        {            
+        if (col.gameObject.name == "Cube" && deathToggle)// if a gameobject collides with an object called "trigger" it will satisfy conditions of if statement.
+        {      
+            aiScared = col.gameObject.GetComponent<AI_Scared>();
             Debug.Log("You collided with enemy");
             aiScared.ScaredAI();
         }
