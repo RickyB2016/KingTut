@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
 
 	public int curHealth;
 	public int maxHealth = 6;
-	public GameOverScript GameOver; 
 
 	private bool damage = true;
 
@@ -37,7 +36,6 @@ public class Player : MonoBehaviour
 
 	void Die()
 	{
-		GameOver.enabled = true;
 		SceneManager.LoadScene ("Main Menu");
 	}
 

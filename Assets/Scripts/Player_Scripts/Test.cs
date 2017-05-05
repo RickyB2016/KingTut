@@ -19,7 +19,7 @@ public class Test : MonoBehaviour {
 
 	//Script components
 	public Movement movement;
-	public Test rageScript;
+
 
 	private float next;
 	private bool act = false;
@@ -28,6 +28,8 @@ public class Test : MonoBehaviour {
 	private Vector3 baseScale;
 	private int currScale;
 	private Vector3 moveDirection = Vector3.zero;
+
+
 
 	// Rage Enemy Disable
 	public Player player_script;
@@ -84,11 +86,14 @@ public class Test : MonoBehaviour {
 			capsule_collider_two.radius = 0.5f;
 			capsule_collider_two.height = 1.0f;			
 			Debug.Log("Calm");
-
 			player_script.Health_On ();
-			rageScript.enabled = false;
+
+
+
+
 		}
 	}
+
 
 	public void ChangeSize(bool bigger) {
 
